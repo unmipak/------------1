@@ -1,0 +1,32 @@
+.btn {
+  display: block;
+  padding: 25px;
+  font-family: "Roboto Condensed Bold";
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  transition: opacity $trans-default;
+
+  &--light {
+    color: $color-default-white;
+    border:  $color-default-white 4px solid;
+  }
+
+  &--dark {
+    color: $color-sapphire;
+    border:  $color-sapphire 2px solid;
+  }
+
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}

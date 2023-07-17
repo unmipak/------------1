@@ -1,0 +1,94 @@
+.event {
+  padding: 70px 15px 0 15px;
+}
+
+.event__banner {
+  background: $color-torch-red;
+  color: $color-default-white;
+}
+
+.event__info {
+  padding: 50px 44px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 29px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.event__title {
+  margin: 0;
+  text-align: center;
+  font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
+  font-size: 48px;
+  line-height: 96%;
+  letter-spacing: 3%;
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.event__text {
+  margin: 0;
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.event__btn {
+  text-align: center;
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+}
+
+.event__time {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+
+  & b {
+    width: min-content;
+    display: block;
+    font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+    font-size: 24px;
+    border-top: 2px solid white;
+    padding-top: 5px;
+  }
+}
+
+.event__date {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+
+  & div {
+    width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 2px solid white;
+    padding-top: 5px;
+  }
+
+  & b {
+    width: min-content;
+    display: block;
+    font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+    font-size: 24px;
+  }
+
+  & span {
+    font-size: 10px;
+  }
+}
+
+.event__underline {
+  line-height: 150%;
+  display: block;
+  padding-bottom: 7px;
+}
+
+.event__text {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+}

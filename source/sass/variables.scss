@@ -1,0 +1,70 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-default-grey:                #787878;
+$color-transparent:                 rgba(255, 255, 255, 0);
+
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+$color-ghost-white:                 #f8f9fc;
+$color-sapphire:                    #102654;
+$color-egyptian-blue:               #103AAE;
+$color-persian-blue:                #2E35AC; //мелкий текст в преимуществах
+$color-resolution-blue:             #1C3374; //фон в преимуществах
+$color-torch-red:                   #ED0233; //баннеры
+$color-torch-crimson:               #D10A42; //бегунок
+$color-torch-red-error:             #FF121F; //ошибка
+$color-black-russian:               #030A1A; //футер
+$color-chambray:                    #495A7D; //текст
+
+// Gradient
+
+$background-gradient:               conic-gradient(from 145deg at  16% 39%, #003D85 32deg, #B80027 313deg, #003D85 360deg);
+$text-gradient:                     linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
+$btn-gradient:                      linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+
+
+// Typography
+// ---------------------------------
+
+// переменная используемая в html для подключения скейлинга
+$fz-default:                        16px;
+
+// у некоторых шрифтов в ios возникают проблемы с символом рубля
+// https://www.artlebedev.ru/kovodstvo/sections/159/#13
+$ff-rouble:                         "Rouble", "Arial", sans-serif;
+
+$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+$trans-600:                         0.6s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+$vp-320:                            320px;
+$vp-375:                            375px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1280:                           1280px;
+$vp-1440:                           1440px;
+$vp-1920:                           1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

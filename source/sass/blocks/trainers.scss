@@ -1,0 +1,71 @@
+.trainers {
+  padding: 63px 15px 70px;
+}
+
+.trainers__title {
+  text-align: center;
+  font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
+  font-size: 32px;
+  line-height: normal;
+  color: $color-sapphire;
+  margin: 0;
+  padding: 0 15px 20px 15px;
+}
+
+.trainers__card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+  margin: 42px auto 0 auto;
+  padding: 48px 33px 30px;
+  background-color: $color-sapphire;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 226px;
+  min-height: 274px;
+
+  &--pavlova {
+    background-image: url("../../img/pavlova.jpg");
+  }
+
+  &--lavrov {
+    background-image: url("../../img/lavrov.jpg");
+  }
+
+  &--pashkov {
+    background-image: url("../../img/pashkov.jpg");
+  }
+
+  &--ketova {
+    background-image: url("../../img/ketova.jpg");
+  }
+
+  &:hover .trainers__description,
+  &:hover .trainers__list {
+    display: block;
+  }
+
+  &:focus .trainers__description,
+  &:focus .trainers__list {
+    display: block;
+  }
+}
+
+.trainers__description {
+  display: none;
+}
+
+.trainers__list {
+  display: none;
+}
+
+.trainers__name {
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  color: $color-default-white;
+  margin: 0;
+}

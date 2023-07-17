@@ -1,0 +1,99 @@
+.advantages {
+  background: $color-ghost-white;
+  padding: 63px 0 20px 0;
+}
+
+.advantages__title {
+  text-align: center;
+  font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
+  font-size: 32px;
+  line-height: normal;
+  color: $color-sapphire;
+  margin: 0;
+  padding: 0 46px 52px 47px;
+}
+
+.advantages__header {
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  color: $color-sapphire;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.advantages__description {
+  font-family: "Roboto Condensed Light", "Arial", sans-serif;
+  color: $color-sapphire;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.advantages__item {
+  padding: 0 0 50px 0;
+
+  &--equipment {
+    padding: 50px 0 50px;
+    background: $color-resolution-blue;
+  }
+
+  &--comfort {
+    padding: 50px 0 50px;
+  }
+}
+
+.advantages__header {
+  margin: 0;
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  color: $color-sapphire;
+  font-size: 20px;
+  line-height: 150%;
+
+}
+
+.advantages__item--equipment .advantages__header {
+  font-size: 22px;
+  color: $color-default-white;
+}
+
+.advantages__label {
+  display: block;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  color: $color-persian-blue;
+}
+
+.advantages__description {
+  margin: 0;
+  font-family: "Roboto Condensed Light", "Arial", sans-serif;
+  color: $color-sapphire;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.advantages__item--equipment .advantages__description {
+  color: $color-default-white;
+}
+
+.advantages__number {
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-size: 58px;
+  line-height: 150%;
+  background-image: $text-gradient;
+  background-color: $color-sapphire;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.advantages__item--equipment .advantages__number {
+  background-image: none;
+  background-color: $color-default-white;
+  color: $color-default-white;
+}

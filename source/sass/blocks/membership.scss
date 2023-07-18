@@ -6,12 +6,8 @@
 }
 
 .membership__title {
-  font-family: "Alumni Sans Semibold", "Arial", sans-serif;
-  font-size: 32px;
-  color: $color-sapphire;
-  text-align: center;
-  margin: 0;
-  padding: 0 0 24px 0;
+  @include block-title;
+  padding-bottom: 24px;
 }
 
 .membership__pagination {
@@ -60,7 +56,7 @@
 
   &--current {
     border: 7px solid;
-    border-image: linear-gradient(to bottom right, rgba(209, 10, 66, 1), rgba(0, 53, 159, 1));
+    border-image: $border-gradient;
     border-image-slice: 1;
   }
 }

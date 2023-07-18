@@ -1,0 +1,28 @@
+.feedback {
+  padding: 70px 15px;
+  background: $color-sapphire;
+}
+
+.feedback__title {
+  @include block-title;
+  color: $color-default-white;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.feedback__input {
+  width: 100%;
+  background: none;
+  border: none;
+  color: $color-default-white;
+  border-bottom: 1px solid $color-light-slate-grey;
+  padding: 10px 0;
+  margin-bottom: 40px;
+
+  &::-webkit-input-placeholder { color: $color-default-white; };
+}
+
+.feedback__btn {
+  width: 290px;
+  margin: 0 auto;
+}

@@ -4,12 +4,7 @@
 }
 
 .advantages__title {
-  text-align: center;
-  font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
-  font-size: 32px;
-  line-height: normal;
-  color: $color-sapphire;
-  margin: 0;
+  @include block-title;
   padding: 0 46px 52px 47px;
 }
 

@@ -15,7 +15,7 @@
     <main>
       <header class="header">
         <div class="header__wrapper">
-          <a class="header__link " href="#">Supergym</a>
+          <a class="header__logo " href="#">Supergym</a>
           <a class="header__tel" href="tel:+78005555555">8-800-555-55-55</a>
         </div>
         <section class="hero">
@@ -167,110 +167,129 @@
     </ul>
   </section>
   <section class="promo">
+    <h2 class="promo__title">Акции</h2>
     <div class="promo__banner promo__banner--main">
       <div class="promo__info">
-        <span class="promo__text">Год</span>
+        <span class="promo__header">Год</span>
         <b class="promo__price">4999</b>
         <p class="promo__desciption">Безлимитный абонемент в тренажерный зал</p>
         <a class="promo__link link" href="#">Подробнее</a>
       </div>
-      <img class="promo__picture">
+      <img class="promo__picture" src="/img/promo.jpg" width="290" height="299">
     </div>
     <div class="promo__banner promo__banner--refer">
       <div class="promo__info">
-        <b class="promo__title">Месяц бесплатно</b>
+        <b class="promo__header">Месяц бесплатно</b>
         <p class="promo__desciption">Приведи друга, получи абонемент в подарок</p>
         <a class="promo__link link" href="#">Подробнее</a>
       </div>
     </div>
     <div class="promo__banner promo__banner--coprorate">
       <div class="promo__info">
-        <b class="promo__title">Скидка 20%</b>
-        <p class="promo__desciption">Приведи друга, получи абонемент в подарок</p>
+        <b class="promo__header">Скидка 20%</b>
+        <p class="promo__desciption">Корпоративный фитнес с командой</p>
         <a class="promo__link link" href="#">Подробнее</a>
       </div>
     </div>
   </section>
   <section class="faq">
-    <dl class="faq__list faq__list--servises">
-      <dt>
+    <h2 class="faq__title">Вопросы и ответы</h2>
+    <nav class="faq__navigation">
+      <ul class="faq__navigation-list">
+        <li class="faq__item">
+          <a class="faq__link">Центр</a>
+        </li>
+        <li class="faq__item">
+          <a class="faq__link">Абонемент</a>
+        </li>
+        <li class="faq__item faq__item">
+          <a class="faq__link faq__link--current">Услуги</a>
+        </li>
+        <li class="faq__item">
+          <a class="faq__link">Правила</a>
+        </li>
+      </ul>
+    </nav>
+
+    <dl class="faq__question-list faq__question-list--services">
+      <dt class="faq__question">
         Предлагает ли клуб услуги по консультированию по вопросам питания?
       </dt>
-      <dd>
+      <dd class="faq__answer">
         Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
         данные, цели и предложит программу питания.
       </dd>
-      <dt>
+      <dt class="faq__question">
         Проводятся ли в клубе какие-либо мероприятия или соревнования?
       </dt>
-      <dd>
+      <dd class="faq__answer">
         Да.
       </dd>
-      <dt>
+      <dt class="faq__question">
         Можно ли приобрести в центре спортивное питание?
       </dt>
-      <dd>
+      <dd class="faq__answer">
         Да.
       </dd>
-      <dt>
+      <dt class="faq__question">
         Есть ли в центре детская комната?
         </dе>
-      <dd>
+      <dd class="faq__answer">
         Да.
       </dd>
     </dl>
-    <dl class="faq__list faq__list--gym">
-      <dt>
+    <dl class="faq__question-list faq__question-list--gym">
+      <dt class="faq__question">
         Как стать членом фитнес-центра?
       </dt>
-      <dd>
+      <dd class="faq__answer">
         При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
         При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
       </dd>
-      <dt>
+      <dt class="faq__question">
         Где можно посмотреть расписание?
       </dt>
-      <dd>
+      <dd class="faq__answer">
         На сайте.
       </dd>
-      <dt>
+      <dt class="faq__question">
         Есть кулеры в центре? Предоставляются полотенца?
       </dt>
-      <dd>
+      <dd class="faq__answer">
         Да.
       </dd>
-      <dt>
+      <dt class="faq__question">
         Сколько тренеров работает в клубе и какова их квалификация?
       </dt>
-      <dd>
+      <dd class="faq__answer">
         Более 20 тренеров, средний стаж 5+ лет.
       </dd>
     </dl>
-    <dl class="faq__list faq__list--membership">
-      <dt>
+    <dl class="faq__question-list faq__question-list--membership">
+      <dt class="faq__question">
         Занятия с тренером входят в абонемент?
       </dt>
-      <dd>
+      <dd class="faq__answer">
         При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
         присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
         или технике выполнения упражнения.
       </dd>
-      <dt>
+      <dt class="faq__question">
         Можно ли заморозить абонемент?
       </dt>
-      <dd>
+      <dd class="faq__answer">
         Да.
       </dd>
-      <dt>
+      <dt class="faq__question">
         Есть ли лимит по посещениям тренажерного зала и групповых занятий?
       </dt>
-      <dd>
+      <dd class="faq__answer">
         Нет.
       </dd>
-      <dt>
+      <dt class="faq__question">
         Что такое семейный доступ и доступ для друзей?
       </dt>
-      <dd>
+      <dd class="faq__answer">
         Свяжитесь с администратором по телефону.
       </dd>
     </dl>
@@ -279,16 +298,15 @@
     <h2 class="reviews__title">Отзывы</h2>
     <div class="swiper-wrapper">
       <div class="swiper-slide reviews__slide">
-        <img class="reviews__picture">
+        <img class="reviews__picture" src="/img/photo-review.png" width="68" height="68">
         <h3 class="reviews__name">Анна Орлова</h3>
-        <p class="reviews__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры
-          обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+        <p class="reviews__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
       </div>
-      <div class="swiper-slide reviews__slide">
+      <!--<div class="swiper-slide reviews__slide">
         <img class="reviews__picture">
         <h3 class="reviews__name">Анна Соболева</h3>
         <p class="reviews__text">Супер!</p>
-      </div>
+      </div>-->
     </div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
@@ -298,7 +316,7 @@
     <form class="feedback__form">
       <input class="feedback__input" type="text" placeholder="Имя" required>
       <input class="feedback__input" type="tel" placeholder="Телефон" required>
-      <button class="feedback__btn btn" type="submit">Отправить</button>
+      <button class="feedback__btn btn btn--light" type="submit">Отправить</button>
     </form>
   </section>
   <section class="contacts">
@@ -315,23 +333,23 @@
   </section>
   </main>
   <footer class="footer">
-    <a class="footer__link" href="#">Supergym</a>
-    <nav class="footer-nav">
-      <ul class="footer-nav__list">
-        <li class="footer-nav__item">
-          <a class="footer-nav__link">Услуги</a>
+    <a class="footer__logo" href="#">Supergym</a>
+    <nav class="footer__nav">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link">Акции</a>
         </li>
-        <li class="footer-nav__item">
-          <a class="footer-nav__link">Абонементы</a>
+        <li class="footer__item">
+          <a class="footer__link">Услуги</a>
         </li>
-        <li class="footer-nav__item">
-          <a class="footer-nav__link">Акции</a>
+        <li class="footer__item">
+          <a class="footer__link">Абонементы</a>
         </li>
-        <li class="footer-nav__item">
-          <a class="footer-nav__link">Тренеры</a>
+        <li class="footer__item">
+          <a class="footer__link">Тренеры</a>
         </li>
-        <li class="footer-nav__item">
-          <a class="footer-nav__link">Расписание</a>
+        <li class="footer__item">
+          <a class="footer__link">Расписание</a>
         </li>
       </ul>
     </nav>
@@ -347,35 +365,6 @@
       </li>
     </ul>
   </footer>
-  </div>
-
-  <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
   </div>
 
   <script src="js/vendor.min.js"></script>

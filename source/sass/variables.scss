@@ -1,5 +1,4 @@
 // Colors
-// ---------------------------------
 
 // Default
 
@@ -15,19 +14,20 @@ $color-ghost-white:                 #f8f9fc;
 $color-sapphire:                    #102654;
 $color-egyptian-blue:               #103AAE;
 $color-persian-blue:                #2E35AC; //мелкий текст в преимуществах
-$color-resolution-blue:             #1C3374; //фон в преимуществах
+$color-resolution-blue:             #1C3374;
 $color-torch-red:                   #ED0233; //баннеры
 $color-torch-crimson:               #D10A42; //бегунок
 $color-torch-red-error:             #FF121F; //ошибка
 $color-black-russian:               #030A1A; //футер
 $color-chambray:                    #495A7D; //текст
+$color-light-slate-grey:            #74819C;
 
 // Gradient
 
 $background-gradient:               conic-gradient(from 145deg at  16% 39%, #003D85 32deg, #B80027 313deg, #003D85 360deg);
+$border-gradient:                   linear-gradient(to bottom right, #D10A42, #00359F);
 $text-gradient:                     linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
 $btn-gradient:                      linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
-
 
 // Typography
 // ---------------------------------

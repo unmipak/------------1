@@ -3,11 +3,8 @@
   text-align: left;
 }
 .gym__title {
-  font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
-  font-size: 32px;
-  line-height: normal;
-  color: $color-sapphire;
-  margin: 0;
+  @include block-title;
+  text-align: left;
   padding: 0 15px 20px 15px;
 }
 

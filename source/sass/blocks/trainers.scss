@@ -3,13 +3,8 @@
 }
 
 .trainers__title {
-  text-align: center;
-  font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
-  font-size: 32px;
-  line-height: normal;
-  color: $color-sapphire;
-  margin: 0;
-  padding: 0 15px 20px 15px;
+  @include block-title;
+  padding-bottom: 20px;
 }
 
 .trainers__card {

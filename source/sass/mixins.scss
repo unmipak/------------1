@@ -116,3 +116,12 @@
 
 // не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
 // этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
+
+@mixin block-title {
+  font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
+  font-size: 32px;
+  line-height: normal;
+  color: $color-sapphire;
+  text-align: center;
+  margin: 0;
+}

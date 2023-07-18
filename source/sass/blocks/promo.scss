@@ -1,0 +1,83 @@
+.promo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 63px 15px 70px;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.promo__title {
+  @include block-title;
+  padding-bottom: 42px;
+}
+
+.promo__banner {
+  text-align: center;
+  padding: 46px 40px 46px 40px;
+  color: $color-resolution-blue;
+  border: 7px solid;
+  border-image: $border-gradient;
+  border-image-slice: 1;
+
+  &--main {
+  background: $color-torch-red;
+  color: $color-default-white;
+  border: none;
+  padding: 0;
+  }
+}
+
+.promo__header {
+  display: block;
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+
+.promo__desciption {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  line-height: 140%;
+  font-size: 16px;
+  padding-bottom: 35px;
+}
+
+.promo__link {
+  color: $color-resolution-blue;
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  line-height: 100%;
+  font-size: 14px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.promo__banner--main .promo__header {
+  font-size: 28px;
+  padding: 46px 50px 0;
+  line-height: 19px;
+}
+
+.promo__banner--main .promo__price {
+  display: block;
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  line-height: normal;
+  font-size: 70px;
+  padding: 0 50px;
+}
+
+.promo__banner--main .promo__desciption {
+  font-size: 18px;
+  padding: 0 50px 40px;
+}
+
+.promo__banner--main .promo__link {
+  display: block;
+  color: $color-default-white;
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  line-height: 100%;
+  font-size: 14px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding: 0 50px 45px;
+}

@@ -4,16 +4,16 @@
 
 .trainers__title {
   @include block-title;
-  padding-bottom: 20px;
+  padding-bottom: 42px;
 }
 
 .trainers__card {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-content: center;
-  margin: 42px auto 0 auto;
   padding: 48px 33px 30px;
   background-color: $color-sapphire;
   background-size: cover;

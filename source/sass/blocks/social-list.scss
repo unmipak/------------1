@@ -7,13 +7,39 @@
   gap: 11px;
 }
 
-.social-list__item {
+.social-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 25px;
   height: 25px;
-}
+  background: $color-default-white;
+  border-radius: 50%;
+  cursor: pointer;
 
-.social-list__link {
-  color: $color-default-white;
-  width: 100%;
-  height: 100%;
+  &:hover,
+  &:focus {
+    background: $color-egyptian-blue;
+  }
+
+  &:active {
+    background: $color-sapphire
+  }
+
+  &:disabled {
+    background: $color-default-white;
+    opacity: 30%;
+  }
+
+  & svg,
+  &:disabled > svg {
+    fill: $color-black-russian;
+  }
+
+  &:hover > svg,
+  &:focus > svg,
+  &:active > svg {
+    fill: $color-default-white;
+  }
+
 }

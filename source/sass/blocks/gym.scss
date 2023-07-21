@@ -1,11 +1,22 @@
 .gym {
-  padding: 70px 0;
+  padding: 120px 103px 235px 163px;
   text-align: left;
+  display: grid;
+  grid-template-columns: 355px 660px;
+  column-gap: 85px;
+  position: relative;
+
+  @include vp-1279 {
+    column-gap: 0
+  }
+
 }
+
 .gym__title {
   @include block-title;
   text-align: left;
-  padding: 0 15px 20px 15px;
+  padding: 0 0 25px 0;
+  grid-column: 1 / 2;
 }
 
 .gym__subtitle {
@@ -15,24 +26,74 @@
   line-height: normal;
   color: $color-sapphire;
   margin: 0;
-  padding: 0 15px 40px 15px;
+  padding: 0 0 55px 0;
+  grid-column: 1 / 2;
+  height: min-content;
 }
+
 
 .gym__description {
   font-family: "Roboto Condensed Light", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
   color: $color-sapphire;
   margin: 0;
-  padding: 0 47px 40px 15px;
+  padding: 0;
+  grid-column: 1 / 2;
+
+  & span {
+    display: block;
+    padding-top: 24px;
+  }
+
 }
 
 .gym__picture {
-  display: block;
-  margin: 0 auto;
-  padding: 0 0 40px 0;
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
 }
 
 .gym__video {
-  margin: 0 auto;
+  position: absolute;
+  bottom: 120px;
+  left: 53%;
+  transform: translateX(-50%);
+
+  @include vp-1279 {
+    left: 55%;
+  }
+}
+
+@include vp-767 {
+  .gym {
+    padding: 70px 0;
+    text-align: left;
+  }
+
+  .gym__title {
+    font-size: 32px;
+    padding: 0 15px 20px 15px;
+  }
+
+  .gym__subtitle {
+    padding: 0 15px 40px 15px;
+  }
+
+  .gym__description {
+    padding: 0 47px 40px 15px;
+
+    & span {
+      display: none;
+    }
+  }
+
+  .gym__picture {
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+  }
+
+  .gym__video {
+    margin: 0 auto;
+  }
 }

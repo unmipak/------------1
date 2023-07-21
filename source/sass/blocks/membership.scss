@@ -108,6 +108,19 @@
     background: $btn-gradient;
     border: none;
   }
+
+  .membership__btn:hover,
+  .membership__btn:focus,
+  .membership__btn:focus-visible {
+    background: $color-default-white;
+    color: $color-egyptian-blue;
+    outline: 2px solid $color-sapphire;
+  }
+
+  .membership__btn:active {
+    background: $color-default-white;
+    color: $color-sapphire;
+  }
 }
 
 

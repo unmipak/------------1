@@ -1,39 +1,88 @@
 .footer {
-  position: relative;
   background: $color-black-russian;
-  padding: 50px 15px 52px;
+  padding: 41px 104px 32px 103px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__logo {
-  position: absolute;
-  color: $color-default-white;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  text-transform: uppercase;
+  max-width: 88px;
+  fill: $color-default-white;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 2px solid $color-default-white;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .footer__list {
   list-style-type: none;
   margin: 0;
-  padding: 0 0 40px 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  column-gap: 20px;
-  row-gap: 30px;
-
-  &::after {
-    content: "";
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
 
 .footer__link {
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 16px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
   color: $color-default-white;
   width: 100%;
   height: 100%;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid $color-default-white;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+@include vp-767 {
+  .footer {
+    position: relative;
+    padding: 50px 15px 52px;
+  }
+
+  .footer__logo {
+    position: absolute;
+  }
+
+  .footer__list {
+    padding: 0 0 40px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+
+    &::after {
+      content: "";
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  }
+
+  .footer__link {
+    font-size: 16px;
+  }
 }

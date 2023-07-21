@@ -4,7 +4,7 @@
   }
 }
 
-@mixin hover {
+/*@mixin hover {
   @media (hover: hover) {
     &:hover:not(.focus-visible) {
       @content;
@@ -35,6 +35,7 @@
     @content;
   }
 }
+*/
 
 // Desktop first
 
@@ -119,7 +120,7 @@
 
 @mixin block-title {
   font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
-  font-size: 32px;
+  font-size: 48px;
   line-height: normal;
   color: $color-sapphire;
   text-align: center;

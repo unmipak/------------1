@@ -48,8 +48,30 @@
   font-family: "Roboto Condensed Bold", "Arial", sans-serif;
   line-height: 100%;
   font-size: 14px;
-  text-decoration: underline;
   text-transform: uppercase;
+  margin: 35px auto 45px;
+  padding: 10px 0 2px;
+  border-bottom: 1px solid $color-resolution-blue;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:focus {
+    outline: 1px solid $color-resolution-blue;
+    padding: 10px;
+    border-bottom: none;
+  }
+
+  &:active {
+    outline: none;
+    padding: 10px 0 2px;
+    border-bottom: 1px solid $color-resolution-blue;
+  }
+
+  &:disabled {
+    opacity: 30%;
+  }
 }
 
 .promo__banner--main .promo__header {
@@ -68,16 +90,34 @@
 
 .promo__banner--main .promo__desciption {
   font-size: 18px;
-  padding: 0 50px 40px;
+  padding: 0 50px 0;
 }
 
 .promo__banner--main .promo__link {
+  width: fit-content;
   display: block;
   color: $color-default-white;
   font-family: "Roboto Condensed Bold", "Arial", sans-serif;
   line-height: 100%;
   font-size: 14px;
-  text-decoration: underline;
   text-transform: uppercase;
-  padding: 0 50px 45px;
+  margin: 40px auto 45px;
+  padding: 10px 0 5px;
+  border-bottom: 1px solid $color-default-white;
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid $color-default-white;
+    padding: 10px;
+    border-bottom: none;
+    margin: 40px auto 40px;
+  }
+
+  &:active {
+    outline: none;
+    padding: 10px 0 5px;
+    border-bottom: 1px solid $color-default-white;
+  }
 }
+
+

@@ -15,29 +15,41 @@
     <main>
       <header class="header">
         <div class="header__wrapper">
-          <a class="header__logo " href="#">Supergym</a>
+          <a class="header__logo " href="#">
+            <svg width="119" height="23">
+              <use xlink:href="/img/sprite.svg#icon-supergym"></use>
+            </svg>
+          </a>
           <a class="header__tel" href="tel:+78005555555">8-800-555-55-55</a>
         </div>
         <section class="hero">
-          <span class="hero__text">Омск</span>
           <div class="hero__wrapper">
-            <h1 class="hero__title">Фитнес <br> центр</h1>
-            <ul class="hero__list">
-              <li class="hero__item">Тренажёрный зал</li>
-              <li class="hero__item">Групповые занятия</li>
-              <li class="hero__item">Кардио-зона</li>
-            </ul>
+            <span class="hero__text">Омск</span>
+            <div class="hero__wrapper-title">
+              <h1 class="hero__title">Фитнес <br> центр</h1>
+              <ul class="hero__list">
+                <li class="hero__item">Тренажёрный зал</li>
+                <li class="hero__item">Групповые занятия</li>
+                <li class="hero__item">Кардио-зона</li>
+              </ul>
+            </div>
           </div>
           <button class="hero__btn btn btn--light">Купить абонемент</button>
+          <img class="hero__picture" src="/img/hero-banner-desktop.jpg" width="500" height="556" alt="Баннер Supergym">
         </section>
       </header>
       <section class="gym">
         <h2 class="gym__title">Тренажерный зал</h2>
         <b class="gym__subtitle">Просторный зал площадью 900 кв/м</b>
         <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
-          тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-        <img class="gym__picture" src="/img/gym.jpg" width="100%" height="313">
-        <video class="gym__video" width="100%" height="167" poster="/img/video-preview.jpg" controls="controls">
+          тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+          <span>
+            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+            несколько оборудованных залов для различных видов групповых занятий.
+          </span>
+        </p>
+        <img class="gym__picture" src="/img/gym-desktop.jpg" width="660" height="401">
+        <video class="gym__video" width="364" height="228" poster="/img/video-preview.jpg" controls="controls">
           <source src="https://www.youtube.com/watch?v=9TZXsZItgdw&ab_channel=HTMLAcademy">
         </video>
       </section>
@@ -89,335 +101,338 @@
           </div>
           <img class="event__picture" src="/img/super-games.jpg" width="100%" height="292">
         </div>
-  </div>
-  </section>
-  <section class="trainers">
-    <h2 class="trainers__title">Тренеры</h2>
-    <div class="swiper">
-      <div class="swiper-wrapper trainers__slider">
-        <div class="swiper-slide trainers__card trainers__card--pavlova">
-          <h3 class="trainers__name">Анна Павлова</h3>
-          <p class="trainers__description">Йога</p>
-          <ul class="trainers__list">
-            <li class="trainers__item">Бывшая балерина</li>
-            <li class="trainers__item">Опыт работы тренером — 10 лет</li>
-          </ul>
+      </section>
+      <section class="trainers">
+        <h2 class="trainers__title">Тренеры</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper trainers__slider">
+            <div class="swiper-slide trainers__card trainers__card--pavlova">
+              <h3 class="trainers__name">Анна Павлова</h3>
+              <p class="trainers__description">Йога</p>
+              <ul class="trainers__list">
+                <li class="trainers__item">Бывшая балерина</li>
+                <li class="trainers__item">Опыт работы тренером — 10 лет</li>
+              </ul>
+            </div>
+            <div class="swiper-slide trainers__card trainers__card--lavrov">
+              <img class="trainers__picture">
+              <h3 class="trainers__name">Алексей Лавров</h3>
+              <p class="trainers__description">Персональный тренер</p>
+              <ul class="trainers__list">
+                <li class="trainers__item">Победитель чемпионата Урала по бодибилдингу</li>
+                <li class="trainers__item">Опыт — 10 лет</li>
+              </ul>
+            </div>
+            <div class="swiper-slide trainers__card trainers__card--pashkov">
+              <img class="trainers__picture">
+              <h3 class="trainers__name">Александр Пашков</h3>
+              <p class="trainers__description">CrossFit</p>
+              <ul class="trainers__list">
+                <li class="trainers__item">Certified Level 3 Trainer</li>
+                <li class="trainers__item">Победитель чемпионата России по CrossFit </li>
+                <li class="trainers__item">Опыт — 10 лет</li>
+              </ul>
+            </div>
+            <div class="swiper-slide trainers__card trainers__card--ketova">
+              <img class="trainers__picture">
+              <h3 class="trainers__name">Мария Кетова</h3>
+              <p class="trainers__description">Персональный тренер</p>
+              <ul class="trainers__list">
+                <li class="trainers__item">Certified Level 3 Trainer</li>
+                <li class="trainers__item">Победительница чемпионата России по CrossFit </li>
+                <li class="trainers__item">Опыт — 11 лет</li>
+              </ul>
+            </div>
+            <div class="swiper-slide trainers__card trainers__card--pavlova">
+              <h3 class="trainers__name">Анна Павлова</h3>
+              <p class="trainers__description">Йога</p>
+              <ul class="trainers__list">
+                <li class="trainers__item">Бывшая балерина</li>
+                <li class="trainers__item">Опыт работы тренером — 10 лет</li>
+              </ul>
+            </div>
+            <div class="swiper-slide trainers__card trainers__card--lavrov">
+              <img class="trainers__picture">
+              <h3 class="trainers__name">Алексей Лавров</h3>
+              <p class="trainers__description">Персональный тренер</p>
+              <ul class="trainers__list">
+                <li class="trainers__item">Победитель чемпионата Урала по бодибилдингу</li>
+                <li class="trainers__item">Опыт — 10 лет</li>
+              </ul>
+            </div>
+            <div class="swiper-slide trainers__card trainers__card--pashkov">
+              <img class="trainers__picture">
+              <h3 class="trainers__name">Александр Пашков</h3>
+              <p class="trainers__description">CrossFit</p>
+              <ul class="trainers__list">
+                <li class="trainers__item">Certified Level 3 Trainer</li>
+                <li class="trainers__item">Победитель чемпионата России по CrossFit </li>
+                <li class="trainers__item">Опыт — 10 лет</li>
+              </ul>
+            </div>
+            <div class="swiper-slide trainers__card trainers__card--ketova">
+              <img class="trainers__picture">
+              <h3 class="trainers__name">Мария Кетова</h3>
+              <p class="trainers__description">Персональный тренер</p>
+              <ul class="trainers__list">
+                <li class="trainers__item">Certified Level 3 Trainer</li>
+                <li class="trainers__item">Победительница чемпионата России по CrossFit </li>
+                <li class="trainers__item">Опыт — 11 лет</li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-slide trainers__card trainers__card--lavrov">
-          <img class="trainers__picture">
-          <h3 class="trainers__name">Алексей Лавров</h3>
-          <p class="trainers__description">Персональный тренер</p>
-          <ul class="trainers__list">
-            <li class="trainers__item">Победитель чемпионата Урала по бодибилдингу</li>
-            <li class="trainers__item">Опыт — 10 лет</li>
-          </ul>
+      </section>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title">Наши преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--area">
+            <b class="advantages__number">900</b> <span class="advantages__label">кв/м</span>
+            <h3 class="advantages__header">Площадь</h3>
+            <p class="advantages__description">Занимайтесь без очередей и толпучки</p>
+          </li>
+          <li class="advantages__item advantages__item--parking">
+            <b class="advantages__number">70</b> <span class="advantages__label">машин</span>
+            <h3 class="advantages__header">Собственная парковка</h3>
+            <p class="advantages__description">Вы всегда найдете место для своей машины на нашей парковке</p>
+          </li>
+          <li class="advantages__item advantages__item--equipment">
+            <b class="advantages__number">100</b>
+            <h3 class="advantages__header">Тренажеров</h3>
+            <p class="advantages__description">Современные тренажеры на все группы мышц</p>
+          </li>
+          <li class="advantages__item advantages__item--comfort">
+            <b class="advantages__number">350</b> <span class="advantages__label">мест</span>
+            <h3 class="advantages__header">Комфорт</h3>
+            <p class="advantages__description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+          </li>
+          <li class="advantages__item advantages__item--experience">
+            <b class="advantages__number">5+</b> <span class="advantages__label">лет</span>
+            <h3 class="advantages__header">Тренерский опыт</h3>
+            <p class="advantages__description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+          </li>
+        </ul>
+      </section>
+      <section class="promo">
+        <h2 class="promo__title">Акции</h2>
+        <div class="promo__banner promo__banner--main">
+          <div class="promo__info">
+            <span class="promo__header">Год</span>
+            <b class="promo__price">4999</b>
+            <p class="promo__desciption">Безлимитный абонемент в тренажерный зал</p>
+            <a class="promo__link link" href="#">Подробнее</a>
+          </div>
+          <img class="promo__picture" src="/img/promo.jpg" width="290" height="299">
         </div>
-        <div class="swiper-slide trainers__card trainers__card--pashkov">
-          <img class="trainers__picture">
-          <h3 class="trainers__name">Александр Пашков</h3>
-          <p class="trainers__description">CrossFit</p>
-          <ul class="trainers__list">
-            <li class="trainers__item">Certified Level 3 Trainer</li>
-            <li class="trainers__item">Победитель чемпионата России по CrossFit </li>
-            <li class="trainers__item">Опыт — 10 лет</li>
-          </ul>
+        <div class="promo__banner promo__banner--refer">
+          <div class="promo__info">
+            <b class="promo__header">Месяц бесплатно</b>
+            <p class="promo__desciption">Приведи друга, получи абонемент в подарок</p>
+            <a class="promo__link link" href="#">Подробнее</a>
+          </div>
         </div>
-        <div class="swiper-slide trainers__card trainers__card--ketova">
-          <img class="trainers__picture">
-          <h3 class="trainers__name">Мария Кетова</h3>
-          <p class="trainers__description">Персональный тренер</p>
-          <ul class="trainers__list">
-            <li class="trainers__item">Certified Level 3 Trainer</li>
-            <li class="trainers__item">Победительница чемпионата России по CrossFit </li>
-            <li class="trainers__item">Опыт — 11 лет</li>
-          </ul>
+        <div class="promo__banner promo__banner--coprorate">
+          <div class="promo__info">
+            <b class="promo__header">Скидка 20%</b>
+            <p class="promo__desciption">Корпоративный фитнес с командой</p>
+            <a class="promo__link link" href="#">Подробнее</a>
+          </div>
         </div>
-        <div class="swiper-slide trainers__card trainers__card--pavlova">
-          <h3 class="trainers__name">Анна Павлова</h3>
-          <p class="trainers__description">Йога</p>
-          <ul class="trainers__list">
-            <li class="trainers__item">Бывшая балерина</li>
-            <li class="trainers__item">Опыт работы тренером — 10 лет</li>
+      </section>
+      <section class="faq">
+        <h2 class="faq__title">Вопросы и ответы</h2>
+        <nav class="faq__navigation">
+          <ul class="faq__navigation-list">
+            <li class="faq__item">
+              <a class="faq__link">Центр</a>
+            </li>
+            <li class="faq__item">
+              <a class="faq__link">Абонемент</a>
+            </li>
+            <li class="faq__item faq__item">
+              <a class="faq__link faq__link--current">Услуги</a>
+            </li>
+            <li class="faq__item">
+              <a class="faq__link">Правила</a>
+            </li>
           </ul>
-        </div>
-        <div class="swiper-slide trainers__card trainers__card--lavrov">
-          <img class="trainers__picture">
-          <h3 class="trainers__name">Алексей Лавров</h3>
-          <p class="trainers__description">Персональный тренер</p>
-          <ul class="trainers__list">
-            <li class="trainers__item">Победитель чемпионата Урала по бодибилдингу</li>
-            <li class="trainers__item">Опыт — 10 лет</li>
-          </ul>
-        </div>
-        <div class="swiper-slide trainers__card trainers__card--pashkov">
-          <img class="trainers__picture">
-          <h3 class="trainers__name">Александр Пашков</h3>
-          <p class="trainers__description">CrossFit</p>
-          <ul class="trainers__list">
-            <li class="trainers__item">Certified Level 3 Trainer</li>
-            <li class="trainers__item">Победитель чемпионата России по CrossFit </li>
-            <li class="trainers__item">Опыт — 10 лет</li>
-          </ul>
-        </div>
-        <div class="swiper-slide trainers__card trainers__card--ketova">
-          <img class="trainers__picture">
-          <h3 class="trainers__name">Мария Кетова</h3>
-          <p class="trainers__description">Персональный тренер</p>
-          <ul class="trainers__list">
-            <li class="trainers__item">Certified Level 3 Trainer</li>
-            <li class="trainers__item">Победительница чемпионата России по CrossFit </li>
-            <li class="trainers__item">Опыт — 11 лет</li>
-          </ul>
-        </div>
-      </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-  </section>
-  </section>
-  <section class="advantages">
-    <h2 class="advantages__title">Наши преимущества</h2>
-    <ul class="advantages__list">
-      <li class="advantages__item advantages__item--area">
-        <b class="advantages__number">900</b> <span class="advantages__label">кв/м</span>
-        <h3 class="advantages__header">Площадь</h3>
-        <p class="advantages__description">Занимайтесь без очередей и толпучки</p>
-      </li>
-      <li class="advantages__item advantages__item--parking">
-        <b class="advantages__number">70</b> <span class="advantages__label">машин</span>
-        <h3 class="advantages__header">Собственная парковка</h3>
-        <p class="advantages__description">Вы всегда найдете место для своей машины на нашей парковке</p>
-      </li>
-      <li class="advantages__item advantages__item--equipment">
-        <b class="advantages__number">100</b>
-        <h3 class="advantages__header">Тренажеров</h3>
-        <p class="advantages__description">Современные тренажеры на все группы мышц</p>
-      </li>
-      <li class="advantages__item advantages__item--comfort">
-        <b class="advantages__number">350</b> <span class="advantages__label">мест</span>
-        <h3 class="advantages__header">Комфорт</h3>
-        <p class="advantages__description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-      </li>
-      <li class="advantages__item advantages__item--experience">
-        <b class="advantages__number">5+</b> <span class="advantages__label">лет</span>
-        <h3 class="advantages__header">Тренерский опыт</h3>
-        <p class="advantages__description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
-      </li>
-    </ul>
-  </section>
-  <section class="promo">
-    <h2 class="promo__title">Акции</h2>
-    <div class="promo__banner promo__banner--main">
-      <div class="promo__info">
-        <span class="promo__header">Год</span>
-        <b class="promo__price">4999</b>
-        <p class="promo__desciption">Безлимитный абонемент в тренажерный зал</p>
-        <a class="promo__link link" href="#">Подробнее</a>
-      </div>
-      <img class="promo__picture" src="/img/promo.jpg" width="290" height="299">
-    </div>
-    <div class="promo__banner promo__banner--refer">
-      <div class="promo__info">
-        <b class="promo__header">Месяц бесплатно</b>
-        <p class="promo__desciption">Приведи друга, получи абонемент в подарок</p>
-        <a class="promo__link link" href="#">Подробнее</a>
-      </div>
-    </div>
-    <div class="promo__banner promo__banner--coprorate">
-      <div class="promo__info">
-        <b class="promo__header">Скидка 20%</b>
-        <p class="promo__desciption">Корпоративный фитнес с командой</p>
-        <a class="promo__link link" href="#">Подробнее</a>
-      </div>
-    </div>
-  </section>
-  <section class="faq">
-    <h2 class="faq__title">Вопросы и ответы</h2>
-    <nav class="faq__navigation">
-      <ul class="faq__navigation-list">
-        <li class="faq__item">
-          <a class="faq__link">Центр</a>
-        </li>
-        <li class="faq__item">
-          <a class="faq__link">Абонемент</a>
-        </li>
-        <li class="faq__item faq__item">
-          <a class="faq__link faq__link--current">Услуги</a>
-        </li>
-        <li class="faq__item">
-          <a class="faq__link">Правила</a>
-        </li>
-      </ul>
-    </nav>
+        </nav>
 
-    <dl class="faq__question-list faq__question-list--services">
-      <dt class="faq__question">
-        Предлагает ли клуб услуги по консультированию по вопросам питания?
-      </dt>
-      <dd class="faq__answer">
-        Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
-        данные, цели и предложит программу питания.
-      </dd>
-      <dt class="faq__question">
-        Проводятся ли в клубе какие-либо мероприятия или соревнования?
-      </dt>
-      <dd class="faq__answer">
-        Да.
-      </dd>
-      <dt class="faq__question">
-        Можно ли приобрести в центре спортивное питание?
-      </dt>
-      <dd class="faq__answer">
-        Да.
-      </dd>
-      <dt class="faq__question">
-        Есть ли в центре детская комната?
-        </dе>
-      <dd class="faq__answer">
-        Да.
-      </dd>
-    </dl>
-    <dl class="faq__question-list faq__question-list--gym">
-      <dt class="faq__question">
-        Как стать членом фитнес-центра?
-      </dt>
-      <dd class="faq__answer">
-        При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
-        При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
-      </dd>
-      <dt class="faq__question">
-        Где можно посмотреть расписание?
-      </dt>
-      <dd class="faq__answer">
-        На сайте.
-      </dd>
-      <dt class="faq__question">
-        Есть кулеры в центре? Предоставляются полотенца?
-      </dt>
-      <dd class="faq__answer">
-        Да.
-      </dd>
-      <dt class="faq__question">
-        Сколько тренеров работает в клубе и какова их квалификация?
-      </dt>
-      <dd class="faq__answer">
-        Более 20 тренеров, средний стаж 5+ лет.
-      </dd>
-    </dl>
-    <dl class="faq__question-list faq__question-list--membership">
-      <dt class="faq__question">
-        Занятия с тренером входят в абонемент?
-      </dt>
-      <dd class="faq__answer">
-        При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
-        присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
-        или технике выполнения упражнения.
-      </dd>
-      <dt class="faq__question">
-        Можно ли заморозить абонемент?
-      </dt>
-      <dd class="faq__answer">
-        Да.
-      </dd>
-      <dt class="faq__question">
-        Есть ли лимит по посещениям тренажерного зала и групповых занятий?
-      </dt>
-      <dd class="faq__answer">
-        Нет.
-      </dd>
-      <dt class="faq__question">
-        Что такое семейный доступ и доступ для друзей?
-      </dt>
-      <dd class="faq__answer">
-        Свяжитесь с администратором по телефону.
-      </dd>
-    </dl>
-  </section>
-  <section class="reviews">
-    <h2 class="reviews__title">Отзывы</h2>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide reviews__slide">
-          <img class="reviews__picture" src="/img/photo-review.png" width="68" height="68">
-          <h3 class="reviews__name">Анна Орлова</h3>
-          <p class="reviews__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры
-            обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+        <dl class="faq__question-list faq__question-list--services">
+          <dt class="faq__question">
+            Предлагает ли клуб услуги по консультированию по вопросам питания?
+          </dt>
+          <dd class="faq__answer">
+            Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
+            данные, цели и предложит программу питания.
+          </dd>
+          <dt class="faq__question">
+            Проводятся ли в клубе какие-либо мероприятия или соревнования?
+          </dt>
+          <dd class="faq__answer">
+            Да.
+          </dd>
+          <dt class="faq__question">
+            Можно ли приобрести в центре спортивное питание?
+          </dt>
+          <dd class="faq__answer">
+            Да.
+          </dd>
+          <dt class="faq__question">
+            Есть ли в центре детская комната?
+            </dе>
+          <dd class="faq__answer">
+            Да.
+          </dd>
+        </dl>
+        <dl class="faq__question-list faq__question-list--gym">
+          <dt class="faq__question">
+            Как стать членом фитнес-центра?
+          </dt>
+          <dd class="faq__answer">
+            При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
+            При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+          </dd>
+          <dt class="faq__question">
+            Где можно посмотреть расписание?
+          </dt>
+          <dd class="faq__answer">
+            На сайте.
+          </dd>
+          <dt class="faq__question">
+            Есть кулеры в центре? Предоставляются полотенца?
+          </dt>
+          <dd class="faq__answer">
+            Да.
+          </dd>
+          <dt class="faq__question">
+            Сколько тренеров работает в клубе и какова их квалификация?
+          </dt>
+          <dd class="faq__answer">
+            Более 20 тренеров, средний стаж 5+ лет.
+          </dd>
+        </dl>
+        <dl class="faq__question-list faq__question-list--membership">
+          <dt class="faq__question">
+            Занятия с тренером входят в абонемент?
+          </dt>
+          <dd class="faq__answer">
+            При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
+            присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
+            или технике выполнения упражнения.
+          </dd>
+          <dt class="faq__question">
+            Можно ли заморозить абонемент?
+          </dt>
+          <dd class="faq__answer">
+            Да.
+          </dd>
+          <dt class="faq__question">
+            Есть ли лимит по посещениям тренажерного зала и групповых занятий?
+          </dt>
+          <dd class="faq__answer">
+            Нет.
+          </dd>
+          <dt class="faq__question">
+            Что такое семейный доступ и доступ для друзей?
+          </dt>
+          <dd class="faq__answer">
+            Свяжитесь с администратором по телефону.
+          </dd>
+        </dl>
+      </section>
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide reviews__slide">
+              <img class="reviews__picture" src="/img/photo-review.png" width="68" height="68">
+              <h3 class="reviews__name">Анна Орлова</h3>
+              <p class="reviews__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры
+                обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+            <div class="swiper-slide reviews__slide">
+              <img class="reviews__picture">
+              <h3 class="reviews__name">Анна Соболева</h3>
+              <p class="reviews__text">Супер!</p>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-slide reviews__slide">
-          <img class="reviews__picture">
-          <h3 class="reviews__name">Анна Соболева</h3>
-          <p class="reviews__text">Супер!</p>
-        </div>
-      </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-  </section>
-  <section class="feedback">
-    <h2 class="feedback__title">Бесплатное занятие</h2>
-    <form class="feedback__form">
-      <input class="feedback__input" type="text" placeholder="Имя" required>
-      <input class="feedback__input" type="tel" placeholder="Телефон" required>
-      <button class="feedback__btn btn btn--light" type="submit">Отправить</button>
-    </form>
-  </section>
-  <section class="contacts">
-    <h2 class="contacts__title">Контакты</h2>
-    <dl class="contacts__list"></dl>
-    <dt class="contacts__item">Адрес:</dt>
-    <dd class="contacts__description">г. Омск, ул. 60 лет Октября, 7</dd>
-    <dt class="contacts__item">График работы:</dt>
-    <dd class="contacts__description">Пн-Вс: с 8:00 до 22:00</dd>
-    <dt class="contacts__item">Телефон:</dt>
-    <dd class="contacts__description">8-800-555-55-55</dd>
-    <dt class="contacts__item">Email:</dt>
-    <dd class="contacts__description">omsk@supergym.ru</dd>
-  </section>
-  </main>
-  <footer class="footer">
-    <a class="footer__logo" href="#">Supergym</a>
-    <nav class="footer__nav">
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a class="footer__link">Акции</a>
+      </section>
+      <section class="feedback">
+        <h2 class="feedback__title">Бесплатное занятие</h2>
+        <form class="feedback__form">
+          <input class="feedback__input" type="text" placeholder="Имя" required>
+          <input class="feedback__input" type="tel" placeholder="Телефон" required>
+          <button class="feedback__btn btn btn--light" type="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <dl class="contacts__list"></dl>
+        <dt class="contacts__item">Адрес:</dt>
+        <dd class="contacts__description">г. Омск, ул. 60 лет Октября, 7</dd>
+        <dt class="contacts__item">График работы:</dt>
+        <dd class="contacts__description">Пн-Вс: с 8:00 до 22:00</dd>
+        <dt class="contacts__item">Телефон:</dt>
+        <dd class="contacts__description">8-800-555-55-55</dd>
+        <dt class="contacts__item">Email:</dt>
+        <dd class="contacts__description">omsk@supergym.ru</dd>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__logo" href="#">
+        <svg width="88" height="32">
+          <use xlink:href="/img/sprite.svg#icon-supergym"></use>
+        </svg>
+      </a>
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Акции</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Услуги</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Абонементы</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Тренеры</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Расписание</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy">
+            <svg width="14" height="14">
+              <use xlink:href="/img/sprite.svg#icon-vk"></use>
+            </svg></a>
         </li>
-        <li class="footer__item">
-          <a class="footer__link">Услуги</a>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--ok" href="#">
+            <svg width="9" height="15">
+              <use xlink:href="/img/sprite.svg#icon-ok"></use>
+            </svg>
+          </a>
         </li>
-        <li class="footer__item">
-          <a class="footer__link">Абонементы</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">Тренеры</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">Расписание</a>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--reddit" href="#">
+            <svg width="14" height="14">
+              <use xlink:href="/img/sprite.svg#icon-reddit"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-    </nav>
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--vk">
-          <svg width="14" height="14">
-            <use xlink:href="/img/sprite/sprite.svg#vk"></use>
-          </svg></a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--ok">
-          <svg width="9" height="15">
-            <use xlink:href="/img/sprite/sprite.svg#ok"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--reddit">
-          <svg width="14" height="14">
-            <use xlink:href="/img/sprite/sprite.svg#reddit"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </footer>
+    </footer>
   </div>
 
   <script src="js/vendor.min.js"></script>

@@ -4,6 +4,8 @@
 @import "vendor/normalize";
 // Swiper 7.4.1
 @import "vendor/swiper";
+@import "vendor/data-accordion.scss";
+@import "vendor/data-tabs.scss";
 
 // Global
 // ---------------------------------
@@ -13,7 +15,6 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
@@ -23,6 +24,7 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/main-container";
 @import "blocks/header";
 @import "blocks/hero";
 @import "blocks/gym";

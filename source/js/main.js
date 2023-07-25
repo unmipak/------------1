@@ -1,6 +1,20 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {initAccordions} from './vendor/init-accordion';
+import {initTabs} from './vendor/init-tabs';
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
+    initAccordions();
+  });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
+    initTabs();
+  });
+});
 
 // ---------------------------------
 

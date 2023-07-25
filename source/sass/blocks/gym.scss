@@ -1,6 +1,7 @@
 .gym {
+  width: 100%;
   padding: 120px 103px 235px 163px;
-  text-align: left;
+  text-align: start;
   display: grid;
   grid-template-columns: 355px 660px;
   column-gap: 85px;
@@ -10,45 +11,44 @@
     column-gap: 0
   }
 
-}
+  h2 {
+    @include block-title;
+    font-size: 48px;
+    text-align: start;
+    padding: 0 0 25px 0;
+    grid-column: 1 / 2;
+  }
 
-.gym__title {
-  @include block-title;
-  text-align: left;
-  padding: 0 0 25px 0;
-  grid-column: 1 / 2;
-}
+  b {
+    display: block;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    color: $color-sapphire;
+    margin: 0;
+    padding: 0 0 55px 0;
+    grid-column: 1 / 2;
+    height: min-content;
+  }
 
-.gym__subtitle {
-  display: block;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: normal;
-  color: $color-sapphire;
-  margin: 0;
-  padding: 0 0 55px 0;
-  grid-column: 1 / 2;
-  height: min-content;
-}
-
-
-.gym__description {
-  font-family: "Roboto Condensed Light", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 150%;
-  color: $color-sapphire;
-  margin: 0;
-  padding: 0;
-  grid-column: 1 / 2;
-
-  & span {
+  span {
     display: block;
     padding-top: 24px;
   }
 
+  p {
+    font-family: "Roboto Condensed Light", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-sapphire;
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / 2;
+  }
 }
 
 .gym__picture {
+  margin: 0 auto;
   grid-column: 2 / 3;
   grid-row: 1 / 4;
 }
@@ -64,36 +64,73 @@
   }
 }
 
+@include vp-1199 {
+  .gym {
+    padding: 100px 45px 183px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gym h2 {
+    text-align: center;
+    padding: 0 0 6px 0;
+    font-size: 42px;
+  }
+
+  .gym b {
+    padding: 0 0 50px 0;
+  }
+
+  .gym p {
+    padding: 0 50px 50px 50px;
+  }
+
+  .gym span {
+    display: none;
+    padding: 0;
+  }
+
+  .gym__video {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+  }
+}
+
 @include vp-767 {
   .gym {
     padding: 70px 0;
-    text-align: left;
+    text-align: start;
+    row-gap: 40px;
   }
 
-  .gym__title {
+  .gym h2 {
     font-size: 32px;
     padding: 0 15px 20px 15px;
+    text-align: start;
   }
 
-  .gym__subtitle {
+  .gym b {
     padding: 0 15px 40px 15px;
   }
 
-  .gym__description {
-    padding: 0 47px 40px 15px;
-
-    & span {
-      display: none;
-    }
+  .gym p {
+    padding: 0 47px 0 15px;
   }
 
   .gym__picture {
     display: block;
     margin: 0 auto;
-    padding: 0 0 40px 0;
   }
 
   .gym__video {
+    position: relative;
     margin: 0 auto;
+    top: 0;
+    left: 0;
+    transform: none;
   }
 }

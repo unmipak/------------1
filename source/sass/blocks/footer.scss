@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .footer__logo {
@@ -57,14 +58,32 @@
   }
 }
 
+@include vp-1199 {
+  .footer {
+    position: relative;
+    padding: 47px 45px;
+  }
+
+  .footer__logo svg {
+    width: 82px;
+    height: auto;
+  }
+}
+
 @include vp-767 {
   .footer {
+    display: block;
     position: relative;
     padding: 50px 15px 52px;
   }
 
   .footer__logo {
     position: absolute;
+  }
+
+  .footer__logo svg {
+    width: 68px;
+    height: auto;
   }
 
   .footer__list {

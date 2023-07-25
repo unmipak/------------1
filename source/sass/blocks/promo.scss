@@ -1,46 +1,59 @@
 .promo {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 63px 15px 70px;
-  justify-content: flex-start;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 135px 103px 120px;
+
+  h2 {
+    @include block-title;
+    padding-bottom: 34px;
+  }
+
+  p {
+    margin: 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    line-height: 140%;
+    font-size: 18px;
+    padding-bottom: 35px;
+  }
+
+  b {
+    display: block;
+    font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+    font-size: 26px;
+    padding-bottom: 20px;
+  }
 }
 
-.promo__title {
-  @include block-title;
-  padding-bottom: 42px;
+.promo__wrapper {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 560px 1fr;
 }
 
 .promo__banner {
-  text-align: center;
-  padding: 46px 40px 46px 40px;
+  width: auto;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
   color: $color-resolution-blue;
   border: 7px solid;
   border-image: $border-gradient;
   border-image-slice: 1;
-
-  &--main {
-  background: $color-torch-red;
-  color: $color-default-white;
-  border: none;
-  padding: 0;
-  }
 }
 
-.promo__header {
-  display: block;
-  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
-  font-size: 26px;
-  padding-bottom: 20px;
-}
-
-.promo__desciption {
-  margin: 0;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  line-height: 140%;
-  font-size: 16px;
-  padding-bottom: 35px;
+.promo__info {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .promo__link {
@@ -49,8 +62,8 @@
   line-height: 100%;
   font-size: 14px;
   text-transform: uppercase;
-  margin: 35px auto 45px;
   padding: 10px 0 2px;
+  margin: 0 auto 0 0;
   border-bottom: 1px solid $color-resolution-blue;
 
   &:hover {
@@ -74,34 +87,52 @@
   }
 }
 
-.promo__banner--main .promo__header {
-  font-size: 28px;
-  padding: 46px 50px 0;
-  line-height: 19px;
-}
+.promo__banner--main {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: row;
+  background: $color-torch-red;
+  color: $color-default-white;
+  border: none;
+  padding: 0;
+  height: fit-content;
 
-.promo__banner--main .promo__price {
-  display: block;
-  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
-  line-height: normal;
-  font-size: 70px;
-  padding: 0 50px;
-}
+  span {
+    font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+    font-size: 28px;
+  }
 
-.promo__banner--main .promo__desciption {
-  font-size: 18px;
-  padding: 0 50px 0;
+  .promo__info {
+    padding: 45px;
+    max-width: 50%;
+  }
+
+  b {
+    display: block;
+    font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+    line-height: 156%;
+    font-size: 70px;
+    padding: 0 0 35px 0;
+  }
+
+  p {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
+
+  picture {
+    max-width: 50%;
+  }
 }
 
 .promo__banner--main .promo__link {
+  margin-top: auto;
   width: fit-content;
   display: block;
   color: $color-default-white;
-  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
-  line-height: 100%;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin: 40px auto 45px;
   padding: 10px 0 5px;
   border-bottom: 1px solid $color-default-white;
 
@@ -120,4 +151,59 @@
   }
 }
 
+@include vp-1199 {
+  .promo {
+    padding: 91px 45px 100px;
+  }
 
+  .promo__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .promo__banner {
+    min-width: auto;
+    width: 47.7%;
+  }
+
+  .promo__banner--main {
+    width: 100%;
+  }
+}
+
+@include vp-767 {
+  .promo {
+    flex-direction: column;
+    padding: 63px 15px 70px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .promo h2 {
+    font-size: 32px;
+  }
+
+  .promo__banner {
+    min-width: auto;
+    width: 100%;
+    text-align: center;
+
+    &--main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: min-content;
+      margin: 0 auto;
+    }
+  }
+
+  .promo__link {
+    margin: 0 auto;
+  }
+
+  .promo__info {
+    padding: 46px 40px 46px 40px;
+  }
+}

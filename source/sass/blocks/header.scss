@@ -1,14 +1,14 @@
 .header {
   box-sizing: border-box;
   background: $background-gradient;
-  padding: 30px 103px;
+  padding: 32px 103px 40px;
 }
 
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
 }
 
@@ -34,6 +34,7 @@
   color: $color-default-white;
   font-size: 26px;
   max-width: 50%;
+  letter-spacing: 0.78px;
 
   &:hover {
     opacity: 80%;
@@ -54,6 +55,11 @@
     padding: 40px 45px 82px;
   }
 
+  .header__wrapper {
+    padding-bottom: 18px;
+    align-items: center;
+  }
+
   .header__logo svg {
     width: 82px;
     height: auto;
@@ -62,6 +68,7 @@
 
   .header__tel {
     font-size: 24px;
+    letter-spacing: 0.5px;
   }
 }
 

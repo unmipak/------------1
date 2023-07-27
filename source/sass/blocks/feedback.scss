@@ -1,6 +1,6 @@
 .feedback {
   width: 50%;
-  padding: 55px 103px 70px;
+  padding: 55px 103px 64px;
   border-top: 1px solid $color-sapphire;
   background: $color-sapphire;
 
@@ -11,41 +11,36 @@
     line-height: 156%;
     color: $color-default-white;
     text-align: start;
-    padding-bottom: 24px;
+    padding-bottom: 10px;
+    -webkit-text-stroke: 1px;
   }
 }
 
 .feedback form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 30px;
-  width: 410px;
-}
-
-.feedback input {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 14px;
-  min-width: 190px;
-  background: none;
-  border: none;
-  color: $color-default-white;
-  border-bottom: 1px solid $color-light-slate-grey;
-  padding: 10px 0;
-
-  &::-webkit-input-placeholder {
-    color: $color-default-white;
-  }
+  justify-content: space-between;
+  column-gap: 30px;
+  row-gap: 26px;
+  max-width: 410px;
 }
 
 .feedback__btn {
   width: 100%;
+  font-size: 14px;
+  padding: 19px;
 }
 
 @include vp-1199 {
   .feedback {
     width: 100%;
-    padding: 70px 163px 70px 133px;
+    padding: 54px 163px 68px 133px;
+  }
+
+  .feedback h2 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    padding-bottom: 18px;
   }
 
   .feedback form {
@@ -53,35 +48,42 @@
     flex-wrap: wrap;
     justify-content: space-between;
     column-gap: 60px;
-    width: auto;
-  }
-
-  .feedback input {
-    min-width: 206px;
-    width: 40%;
+    row-gap: 26px;
+    width: 100%;
+    max-width: none;
   }
 
   .feedback__btn {
     width: 100%;
-    padding: 21px;
+    padding: 18px;
+    border: 3px solid $color-default-white;
+    letter-spacing: 0.7px;
+    font-size: 14px;
   }
 }
 
 @include vp-767 {
   .feedback {
     width: 100%;
-    padding: 70px 15px;
+    padding: 56px 15px 65px;
   }
 
   .feedback h2 {
-    font-size: 32px;
+    font-size: 31px;
+    letter-spacing: 1px;
+    padding-bottom: 24px;
   }
 
   .feedback form {
-    column-gap: 40px;
+    column-gap: 0;
+    width: 100%;
+    row-gap: 23px;
   }
 
-  .feedback input {
-    width: 100%;
+  .feedback__btn {
+    margin-top: 12px;
+    padding: 20px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
   }
 }

@@ -1,10 +1,12 @@
 .reviews {
   width: 100%;
-  padding: 63px 15px 70px;
+  padding: 120px 15px;
 
   h2 {
     @include block-title;
-    padding-bottom: 42px;
+    text-align: center;
+    padding-bottom: 40px;
+    letter-spacing: 1.62px;
   }
 }
 
@@ -24,14 +26,32 @@
     color: $color-sapphire;
     font-size: 32px;
   }
+
+  &:hover,
+  &:focus-visible {
+    outline: 1px solid $color-sapphire;
+    border-radius: 50%;
+  }
+
+  &:active {
+    outline: 1px solid $color-sapphire;
+    border-radius: 50%;
+    background-color: $color-sapphire;
+  }
+
+  &:active::after {
+    color: $color-default-white;
+  }
 }
 
 .reviews__btn-next {
-  right: 0;
+  top: 48%;
+  right: 40px;
 }
 
 .reviews__btn-prev {
-  left: 0;
+  top: 48%;
+  left: 40px;
 }
 
 .reviews__slider {
@@ -42,8 +62,8 @@
   display: grid;
   grid-template-columns: 80px 1fr;
   column-gap: 28px;
-  row-gap: 25px;
-  padding: 62px;
+  row-gap: 18px;
+  padding: 54px 62px;
   background: $color-resolution-blue;
   height: auto;
 
@@ -78,12 +98,51 @@
 }
 
 @include vp-1199 {
+  .reviews {
+    padding: 90px 0 100px;
+  }
+
+  .reviews h2 {
+    font-size: 42px;
+    text-align: center;
+    letter-spacing: 1.26px;
+    padding-bottom: 40px;
+  }
+
   .reviews__slider {
     max-width: 566px;
+  }
+
+  .reviews__slide {
+    padding: 56px 65px 56px;
+    row-gap: 14px;
+  }
+
+  .reviews__slide img {
+    margin-top: 6px;
+  }
+
+  .reviews__btn-next {
+    top: 48%;
+    right: 23px;
+  }
+
+  .reviews__btn-prev {
+    top: 48%;
+    left: 23px;
   }
 }
 
 @include vp-767 {
+  .reviews {
+    padding: 62px 15px 70px;
+  }
+
+  .reviews h2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    padding-bottom: 44px;
+  }
 
   .reviews__wrapper {
     padding: 0;
@@ -91,8 +150,17 @@
 
   .reviews__btn-next,
   .reviews__btn-prev {
+    top: 52%;
     width: 30px;
     height: 30px;
+  }
+
+  .reviews__btn-next {
+    right: -10px;
+  }
+
+  .reviews__btn-prev {
+    left: -10px;
   }
 
   .reviews__btn-next::after,
@@ -110,12 +178,13 @@
     justify-content: center;
     align-items: center;
     column-gap: 15px;
-    row-gap: 20px;
-    padding: 40px 25px;
+    row-gap: 14px;
+    padding: 40px 25px 34px;
 
     img {
       width: 68px;
       height: 68px;
+      margin: 0;
     }
 
     h3 {

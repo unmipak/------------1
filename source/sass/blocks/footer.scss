@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
 }
 
@@ -61,7 +61,13 @@
 @include vp-1199 {
   .footer {
     position: relative;
-    padding: 47px 45px;
+    padding: 40px 45px 39px;
+    align-items: center;
+  }
+
+  .footer__list {
+    padding-left: 12px;
+    gap: 30px;
   }
 
   .footer__logo svg {
@@ -74,7 +80,7 @@
   .footer {
     display: block;
     position: relative;
-    padding: 50px 15px 52px;
+    padding: 46px 15px 52px;
   }
 
   .footer__logo {
@@ -87,12 +93,12 @@
   }
 
   .footer__list {
-    padding: 0 0 40px 0;
+    padding: 0 0 35px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 30px;
+    column-gap: 30px;
+    row-gap: 15px;
 
     &::after {
       content: "";

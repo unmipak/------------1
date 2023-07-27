@@ -31,6 +31,7 @@
   display: grid;
   grid-template-columns: 1fr 660px;
   color: $color-default-white;
+  width: auto;
   margin: 0 auto;
   overflow: hidden;
   height: min-content;
@@ -93,25 +94,27 @@
 }
 
 .event__underline {
-  line-height: 150ox;
+  line-height: 150%;
   display: block;
 }
 
 @include vp-1199 {
   .event {
-    padding: 100px 45px;
+    padding: 101px 45px;
   }
 
   .event__banner {
     width: fit-content;
     display: flex;
+
     picture {
       flex-grow: 1;
     }
   }
 
   .event__info {
-    padding: 51px 45px;
+    min-width: 292px;
+    padding: 53px 45px 48px;
     column-gap: 29px;
   }
 
@@ -121,30 +124,45 @@
 
   .event p {
     font-size: 12px;
-    padding: 15px 0 36px;
+    line-height: 150%;
+    padding: 5px 0 30px;
   }
 
   .event__date {
-    padding-bottom: 13px;
+    padding-bottom: 0;
   }
 
   .event__date b {
     font-size: 24px;
   }
 
-  .event__date span {
-    font-size: 10px;
-    line-height: 150%;
-    padding: 0;
+  .event__date .event__underline {
+    font-size: 12px;
+    line-height: 100%;
+    padding-bottom: 2px;
   }
 
   .event__date div {
-    padding-top: 4px;
+    line-height: 70%;
+    padding-top: 0;
     border-top: 1px solid $color-default-white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+  }
+
+  .event__date span {
+    font-size: 10px;
+  }
+
+  .event__time .event__underline {
+    font-size: 12px;
+    line-height: 100%;
+    padding-bottom: 2px;
   }
 
   .event__time span {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 100%;
     padding: 0;
   }
@@ -156,7 +174,7 @@
   }
 
   .event__btn {
-    padding: 16px;
+    padding: 14px;
     font-size: 10px;
     border: 2px solid $color-default-white;
   }
@@ -172,8 +190,9 @@
   }
 
   .event__info {
-    padding: 50px 44px;
-    column-gap: 29px;
+    min-width: 0;
+    padding: 48px 44px 50px;
+    column-gap: 30px;
   }
 
   .event h3 {
@@ -181,71 +200,61 @@
     text-align: center;
     font-size: 48px;
     line-height: 96%;
-    letter-spacing: 3%;
+    letter-spacing: 1px;
     grid-column: 1;
     grid-row: 1 / 3;
   }
 
   .event p {
     margin: 0;
+    padding: 8px 0 33px;
     grid-column: 1 / 3;
     grid-row: 3 / 4;
-    font-size: 12px;
-    line-height: 150%;
   }
 
   .event__btn {
     text-align: center;
     grid-column: 1 / 3;
     grid-row: 4 / 5;
+    padding: 14px;
+    letter-spacing: 0.5px;
   }
 
-  .event__time {
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+  .event__time span {
     font-size: 12px;
-    line-height: 150%;
-
-    & b {
-      width: min-content;
-      display: block;
-      font-family: "Roboto Condensed Bold", "Arial", sans-serif;
-      font-size: 24px;
-      border-top: 2px solid $color-default-white;
-      padding-top: 5px;
-    }
+    padding-bottom: 5px;
   }
 
-  .event__date {
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+  .event__time b {
+    border-top: 1px solid $color-default-white;
+    font-size: 24px;
+    line-height: 80%;
+  }
+
+  .event__date .event__underline {
     font-size: 12px;
-    line-height: 150%;
-
-    & div {
-      width: max-content;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 3px;
-      justify-content: flex-start;
-      align-items: center;
-      border-top: 2px solid $color-default-white;
-      padding-top: 5px;
-    }
-
-    & b {
-      width: min-content;
-      display: block;
-      font-family: "Roboto Condensed Bold", "Arial", sans-serif;
-      font-size: 24px;
-    }
-
-    & span {
-      font-size: 10px;
-    }
-  }
-
-  .event__underline {
-    line-height: 150%;
     display: block;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
+  }
+
+  .event__date div {
+    width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $color-default-white;
+    padding-top: 5px;
+  }
+
+  .event__date span {
+    font-size: 10px;
+  }
+
+  .event__date b {
+    width: min-content;
+    display: block;
+    font-size: 24px;
   }
 }

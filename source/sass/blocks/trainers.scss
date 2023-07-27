@@ -1,11 +1,13 @@
 .trainers {
   width: 100%;
-  padding: 0 47px 105px;
+  padding: 0 46px 105px;
 
   h2 {
     @include block-title;
     padding-bottom: 48px;
+    padding-left: 58px;
     text-align: start;
+    letter-spacing: 1.62px;
   }
 }
 
@@ -131,7 +133,8 @@
 }
 
 .trainers__btn-prev {
-  left: 0;
+  top: 47%;
+  left: -17px;
   width: 56px;
   height: 56px;
 
@@ -158,7 +161,8 @@
 }
 
 .trainers__btn-next {
-  right: 0;
+  top: 47%;
+  right: -17px;
   width: 56px;
   height: 56px;
 
@@ -198,7 +202,14 @@
 
 @include vp-1199 {
   .trainers {
-    padding: 100px 45px;
+    padding: 0 45px 100px;
+  }
+
+  .trainers h2 {
+    font-size: 42px;
+    text-align: center;
+    letter-spacing: 1.26px;
+    padding-bottom: 32px;
   }
 
   .trainers__wrapper {
@@ -213,11 +224,35 @@
     min-height: 294px;
     max-width: 268px;
   }
+
+  .trainers__card:hover,
+  .trainers__card:focus,
+  .trainers__card:focus-visible {
+    padding: 55px 50px;
+  }
+
+  .trainers__btn-next {
+    top: 48%;
+    right: -20px;
+  }
+
+  .trainers__btn-prev {
+    top: 48%;
+    left: -20px;
+  }
 }
 
 @include vp-767 {
   .trainers {
     padding: 63px 15px 70px;
+  }
+
+  .trainers h2 {
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0;
+    padding-bottom: 44px;
   }
 
   .trainers__slider {
@@ -236,13 +271,22 @@
   .trainers__card:hover,
   .trainers__card:focus,
   .trainers__card:focus-visible {
-    padding: 48px 30px;
+    padding: 46px 33px;
   }
 
   .trainers__btn-next,
   .trainers__btn-prev {
+    top: 53%;
     width: 30px;
     height: 30px;
+  }
+
+  .trainers__btn-next {
+    right: -10px;
+  }
+
+  .trainers__btn-prev {
+    left: -10px;
   }
 
   .trainers__btn-next::after,

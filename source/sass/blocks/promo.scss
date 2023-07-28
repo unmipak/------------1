@@ -245,6 +245,8 @@
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
+    margin: 0 auto;
+    max-width: min-content;
   }
 
   .promo__link {
@@ -262,11 +264,6 @@
 
   .promo__banner p {
     padding-bottom: 18px;
-  }
-
-  .promo__banner--main {
-    margin: 0 auto;
-    max-width: min-content;
   }
 
   .promo__banner--main .promo__info {

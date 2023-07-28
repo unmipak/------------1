@@ -71,7 +71,7 @@
   transform: translateX(-50%);
   border: 0;
   background: none;
-  background-image: url("../img/sprite/icon-play.svg");
+  background-image: url("../img/stack.svg#icon-play");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -82,12 +82,12 @@
   &:hover,
   &:focus-visible,
   &:active {
-    background-image: url("../img/sprite/icon-play-active.svg");
+    background-image: url("../img/stack.svg#icon-play-active");
     outline: none;
   }
 
   &:disabled {
-    background-image: url("../img/sprite/icon-play-disabled.svg");
+    background-image: url("../img/stack.svg#icon-play-disabled");
   }
 }
 
@@ -160,7 +160,6 @@
   .gym {
     padding: 62px 0 70px;
     text-align: start;
-
   }
 
   .gym h2 {

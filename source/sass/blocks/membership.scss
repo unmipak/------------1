@@ -107,13 +107,6 @@
   cursor: pointer;
   border: 7px solid transparent;
 
-  &:hover,
-  &:focus-visible {
-    border: 7px solid;
-    border-image: $border-gradient;
-    border-image-slice: 1;
-  }
-
   h3 {
     text-align: center;
     font-family: "Roboto Condensed Bold", "Arial", sans-serif;
@@ -148,13 +141,10 @@
     align-items: center;
     justify-content: center;
     column-gap: 10px;
-
   }
 
-  p:after {
+  p::after {
     position: absolute;
-    top: 0;
-    left: 0;
     content: attr(data-price);
     font-size: 100px;
     color: $color-whisper;
@@ -176,6 +166,9 @@
 
 .membership__item:hover,
 .membership__item:focus-visible {
+  border: 7px solid;
+  border-image: $border-gradient;
+  border-image-slice: 1;
 
   .membership__btn {
     background: $btn-gradient;
@@ -298,7 +291,7 @@
   .membership__item p {
     column-gap: 7px;
     padding-bottom: 36px;
-    font-size: 48px
+    font-size: 48px;
   }
 
   .membership__item p::after {

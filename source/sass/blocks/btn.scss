@@ -2,7 +2,7 @@
   text-align: center;
   display: block;
   padding: 22px;
-  font-family: "Roboto Condensed Bold";
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0.6px;
@@ -13,12 +13,12 @@
 
   &--light {
     color: $color-default-white;
-    border:  $color-default-white 4px solid;
+    border: $color-default-white 4px solid;
   }
 
   &--dark {
     color: $color-sapphire;
-    outline:  $color-sapphire 2px solid;
+    outline: $color-sapphire 2px solid;
     border: none;
   }
 

@@ -40,3 +40,5 @@ const sliderReviews = new Swiper('.reviews__slider', {
   spaceBetween: 0,
   slidesPerGroup: 1,
 });
+
+export {sliderTrainers, sliderReviews};

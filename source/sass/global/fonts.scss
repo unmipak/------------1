@@ -27,7 +27,7 @@
 
 @font-face {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-family: "Alumni Sans";
 
   font-display: swap;
@@ -50,13 +50,4 @@
 
   font-display: swap;
   src: url("../fonts/AlumniSans-SemiBold.woff2") format("woff2");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Bebas Neue";
-
-  font-display: swap;
-  src: url("../fonts/BebasNeue-Regular.woff2") format("woff2");
 }

@@ -68,4 +68,3 @@ function videoOnclick() {
 video.addEventListener('click', videoOnclick);
 videoBtn.addEventListener('click', videoBtnOnclick);
 window.addEventListener('resize', breakpointChecker);
-

@@ -34,7 +34,7 @@
     line-height: 100%;
     background-image: $text-gradient;
     background-color: $color-sapphire;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
@@ -108,7 +108,7 @@
   &::after {
     position: absolute;
     content: "";
-    background: rgba(209, 10, 66, 0.20);
+    background: rgba(209, 10, 66, 0.2);
     height: 2px;
     width: 340px;
     top: 50%;

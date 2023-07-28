@@ -9,6 +9,12 @@
   <title>Фитнес центр</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="fonts/AlumniSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Condensed.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body>
@@ -36,9 +42,16 @@
         </div>
         <a class="hero__btn btn btn--light" href="#">Купить абонемент</a>
         <picture>
-          <source media="(max-width: 767px)" srcset="./img/hero-banner-desktop.jpg" width="500" height="556">
-          <source media="(max-width: 1199px)" srcset="./img/hero-banner-tablet.jpg" width="324" height="390">
-          <img class="hero__picture" src="./img/hero-banner-desktop.jpg" width="500" height="556" alt="Баннер Supergym">
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="./img/hero-banner-desktop.webp, ./img/hero-banner-desktop@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)"
+            srcset="./img/hero-banner-tablet.webp, ./img/hero-banner-tablet@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="./img/hero-banner-desktop.jpg, ./img/hero-banner-desktop@2x.jpg 2x"
+            width="500" height="556">
+          <source media="(max-width: 1199px)" srcset="./img/hero-banner-tablet.jpg, ./img/hero-banner-tablet@2x.jpg 2x"
+            width="324" height="390">
+          <img class="hero__picture" src="./img/hero-banner-desktop.jpg" width="500" height="556"
+            srcset="./img/hero-banner-desktop@2x.jpg 2x" alt="Баннер Supergym">
         </picture>
       </section>
     </header>
@@ -56,9 +69,16 @@
           </p>
         </div>
         <picture>
-          <source media="(max-width: 767px)" srcset="./img/gym-mobile.jpg" width="320" height="313">
-          <source media="(max-width: 1199px)" srcset="./img/gym-tablet.jpg" width="678" height="345">
-          <img class="gym__picture" src="./img/gym-desktop.jpg" width="660" height="401" alt="Фото тренажерного зала">
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="./img/gym-mobile.webp, ./img/gym-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)"
+            srcset="./img/gym-tablet.webp, ./img/gym-tablet@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="./img/gym-mobile.jpg, ./img/gym-mobile@2x.jpg 2x" width="320"
+            height="313">
+          <source media="(max-width: 1199px)" srcset="./img/gym-tablet.jpg, ./img/gym-tablet@2x.jpg 2x" width="678"
+            height="345">
+          <img class="gym__picture" src="./img/gym-desktop.jpg" width="660" height="401" alt="Фото тренажерного зала"
+            srcset="./img/gym-desktop@2x.jpg 2x">
         </picture>
         <div class="gym__wrapper-video">
           <video class="gym__video" width="364" height="228" poster="./img/video-preview.jpg">
@@ -177,10 +197,16 @@
             <a class="event__btn btn btn--light" href="#">Заполнить заявку</a>
           </div>
           <picture>
-            <source media="(max-width: 767px)" srcset="./img/super-games-mobile.jpg" width="290" height="292">
-            <source media="(max-width: 1199px)" srcset="./img/super-games-tablet.jpg" width="386" height="292">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="./img/super-games-mobile.webp, ./img/super-games-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="./img/super-games-tablet.webp, ./img/super-games-tablet@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="./img/super-games-mobile.jpg, ./img/super-games-mobile@2x.jpg 2x"
+              width="290" height="292">
+            <source media="(max-width: 1199px)"
+              srcset="./img/super-games-tablet.jpg, ./img/super-games-tablet@2x.jpg 2x" width="386" height="292">
             <img class="event__picture" src="./img/super-games-desktop.jpg" width="660" height="500"
-              alt="Баннер Супер Игр">
+              srcset="./img/super-games-desktop@2x.jpg 2x" alt="Баннер Супер Игр">
           </picture>
         </div>
       </section>
@@ -199,9 +225,16 @@
                   </ul>
                 </div>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="./img/pavlova-mobile.jpg" width="226" height="274">
-                  <source media="(max-width: 1199px)" srcset="./img/pavlova-tablet.jpg" width="268" height="294">
-                  <img src="./img/pavlova-desktop.jpg" width="260" height="294" alt="Фотография тренера">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/pavlova-mobile.webp, ./img/pavlova-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/pavlova-tablet.webp, ./img/pavlova-tablet@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/pavlova-mobile.jpg, ./img/pavlova-mobile@2x.jpg 2x"
+                    width="226" height="274">
+                  <source media="(max-width: 1199px)" srcset="./img/pavlova-tablet.jpg, ./img/pavlova-tablet@2x.jpg 2x"
+                    width="268" height="294">
+                  <img src="./img/pavlova-desktop.jpg" width="260" height="294" srcset="./img/pavlova-desktop@2x.jpg 2x"
+                    alt="Фотография тренера">
                 </picture>
               </div>
               <div class="swiper-slide trainers__card trainers__card--lavrov">
@@ -214,9 +247,16 @@
                   </ul>
                 </div>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="./img/lavrov-mobile.jpg" width="226" height="274">
-                  <source media="(max-width: 1199px)" srcset="./img/lavrov-tablet.jpg" width="268" height="294">
-                  <img src="./img/lavrov-desktop.jpg" width="260" height="294" alt="Фотография тренера">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/lavrov-mobile.webp, ./img/lavrov-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/lavrov-tablet.webp, ./img/lavrov-tablet@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/lavrov-mobile.jpg, ./img/lavrov-mobile@2x.jpg 2x"
+                    width="226" height="274">
+                  <source media="(max-width: 1199px)" srcset="./img/lavrov-tablet.jpg, ./img/lavrov-tablet@2x.jpg 2x"
+                    width="268" height="294">
+                  <img src="./img/lavrov-desktop.jpg" width="260" height="294" srcset="./img/lavrov-desktop@2x.jpg 2x"
+                    alt="Фотография тренера">
                 </picture>
               </div>
               <div class="swiper-slide trainers__card trainers__card--pashkov">
@@ -230,9 +270,16 @@
                   </ul>
                 </div>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="./img/pashkov-mobile.jpg" width="226" height="274">
-                  <source media="(max-width: 1199px)" srcset="./img/pashkov-tablet.jpg" width="268" height="294">
-                  <img src="./img/pashkov-desktop.jpg" width="260" height="294" alt="Фотография тренера">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/pashkov-mobile.webp, ./img/pashkov-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/pashkov-tablet.webp, ./img/pashkov-tablet@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/pashkov-mobile.jpg, ./img/pashkov-mobile@2x.jpg 2x"
+                    width="226" height="274">
+                  <source media="(max-width: 1199px)" srcset="./img/pashkov-tablet.jpg, ./img/pashkov-tablet@2x.jpg 2x"
+                    width="268" height="294">
+                  <img src="./img/pashkov-desktop.jpg" width="260" height="294" srcset="./img/pashkov-desktop@2x.jpg 2x"
+                    alt="Фотография тренера">
                 </picture>
               </div>
               <div class="swiper-slide trainers__card trainers__card--ketova">
@@ -246,9 +293,16 @@
                   </ul>
                 </div>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="./img/ketova-mobile.jpg" width="226" height="274">
-                  <source media="(max-width: 1199px)" srcset="./img/ketova-tablet.jpg" width="268" height="294">
-                  <img src="./img/ketova-desktop.jpg" width="260" height="294" alt="Фотография тренера">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/ketova-mobile.webp, ./img/ketova-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/ketova-tablet.webp, ./img/ketova-tablet@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/ketova-mobile.jpg, ./img/ketova-mobile@2x.jpg 2x"
+                    width="226" height="274">
+                  <source media="(max-width: 1199px)" srcset="./img/ketova-tablet.jpg, ./img/ketova-tablet@2x.jpg 2x"
+                    width="268" height="294">
+                  <img src="./img/ketova-desktop.jpg" width="260" height="294" srcset="./img/ketova-desktop@2x.jpg 2x"
+                    alt="Фотография тренера">
                 </picture>
               </div>
               <div class="swiper-slide trainers__card trainers__card--pavlova">
@@ -261,9 +315,16 @@
                   </ul>
                 </div>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="./img/pavlova-mobile.jpg" width="226" height="274">
-                  <source media="(max-width: 1199px)" srcset="./img/pavlova-tablet.jpg" width="268" height="294">
-                  <img src="./img/pavlova-desktop.jpg" width="260" height="294" alt="Фотография тренера">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/pavlova-mobile.webp, ./img/pavlova-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/pavlova-tablet.webp, ./img/pavlova-tablet@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/pavlova-mobile.jpg, ./img/pavlova-mobile@2x.jpg 2x"
+                    width="226" height="274">
+                  <source media="(max-width: 1199px)" srcset="./img/pavlova-tablet.jpg, ./img/pavlova-tablet@2x.jpg 2x"
+                    width="268" height="294">
+                  <img src="./img/pavlova-desktop.jpg" width="260" height="294" srcset="./img/pavlova-desktop@2x.jpg 2x"
+                    alt="Фотография тренера">
                 </picture>
               </div>
               <div class="swiper-slide trainers__card trainers__card--lavrov">
@@ -276,9 +337,16 @@
                   </ul>
                 </div>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="./img/lavrov-mobile.jpg" width="226" height="274">
-                  <source media="(max-width: 1199px)" srcset="./img/lavrov-tablet.jpg" width="268" height="294">
-                  <img src="./img/lavrov-desktop.jpg" width="260" height="294" alt="Фотография тренера">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/lavrov-mobile.webp, ./img/lavrov-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/lavrov-tablet.webp, ./img/lavrov-tablet@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/lavrov-mobile.jpg, ./img/lavrov-mobile@2x.jpg 2x"
+                    width="226" height="274">
+                  <source media="(max-width: 1199px)" srcset="./img/lavrov-tablet.jpg, ./img/lavrov-tablet@2x.jpg 2x"
+                    width="268" height="294">
+                  <img src="./img/lavrov-desktop.jpg" width="260" height="294" srcset="./img/lavrov-desktop@2x.jpg 2x"
+                    alt="Фотография тренера">
                 </picture>
               </div>
               <div class="swiper-slide trainers__card trainers__card--pashkov">
@@ -292,9 +360,16 @@
                   </ul>
                 </div>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="./img/pashkov-mobile.jpg" width="226" height="274">
-                  <source media="(max-width: 1199px)" srcset="./img/pashkov-tablet.jpg" width="268" height="294">
-                  <img src="./img/pashkov-desktop.jpg" width="260" height="294" alt="Фотография тренера">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/pashkov-mobile.webp, ./img/pashkov-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/pashkov-tablet.webp, ./img/pashkov-tablet@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/pashkov-mobile.jpg, ./img/pashkov-mobile@2x.jpg 2x"
+                    width="226" height="274">
+                  <source media="(max-width: 1199px)" srcset="./img/pashkov-tablet.jpg, ./img/pashkov-tablet@2x.jpg 2x"
+                    width="268" height="294">
+                  <img src="./img/pashkov-desktop.jpg" width="260" height="294" srcset="./img/pashkov-desktop@2x.jpg 2x"
+                    alt="Фотография тренера">
                 </picture>
               </div>
               <div class="swiper-slide trainers__card trainers__card--ketova">
@@ -308,9 +383,16 @@
                   </ul>
                 </div>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="./img/ketova-mobile.jpg" width="226" height="274">
-                  <source media="(max-width: 1199px)" srcset="./img/ketova-tablet.jpg" width="268" height="294">
-                  <img src="./img/ketova-desktop.jpg" width="260" height="294" alt="Фотография тренера">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/ketova-mobile.webp, ./img/ketova-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/ketova-tablet.webp, ./img/ketova-tablet@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/ketova-mobile.jpg, ./img/ketova-mobile@2x.jpg 2x"
+                    width="226" height="274">
+                  <source media="(max-width: 1199px)" srcset="./img/ketova-tablet.jpg, ./img/ketova-tablet@2x.jpg 2x"
+                    width="268" height="294">
+                  <img src="./img/ketova-desktop.jpg" width="260" height="294" srcset="./img/ketova-desktop@2x.jpg 2x"
+                    alt="Фотография тренера">
                 </picture>
               </div>
             </div>
@@ -370,9 +452,13 @@
               <a class="promo__link link" href="#">Подробнее</a>
             </div>
             <picture>
-              <source media="(max-width: 767px)" srcset="./img/promo-mobile.jpg" width="290" height="299">
-              <source media="(max-width: 1199px)" srcset="./img/promo-tablet.jpg" width="399" height="462">
-              <img class="promo__picture" src="./img/promo-desktop.jpg" width="280" height="462"
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="./img/promo-mobile.webp, ./img/promo-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="./img/promo-tablet.webp, ./img/promo-tablet@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="./img/promo-mobile.jpg, ./img/promo-mobile@2x.jpg 2x" width="290" height="299">
+              <source media="(max-width: 1199px)" srcset="./img/promo-tablet.jpg, ./img/promo-tablet@2x.jpg 2x" width="399" height="462">
+              <img class="promo__picture" src="./img/promo-desktop.jpg" width="280" height="462" srcset="./img/promo-desktop@2x.jpg 2x"
                 alt="Изображение на промо-баннере">
             </picture>
           </div>
@@ -577,14 +663,14 @@
         <h2>Бесплатное занятие</h2>
         <div class="feedback__wrapper" data-form-validate data-callback="base">
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <div class="custom-input" data-validate-type="text" , data-limitation="name" ,
-              data-message-base="Заполните поле" , data-message-extra="Проверьте корректность заполнения поля" ,
+            <div class="custom-input" data-validate-type="text" data-limitation="name"
+              data-message-base="Заполните поле" data-message-extra="Проверьте корректность заполнения поля"
               data-required>
               <input type="text" placeholder="Имя" required>
             </div>
-            <div class="custom-input" data-validate-type="phone" , data-on-input-validate,
-              data-message-base="Заполните поле" , data-message-extra="Проверьте корректность заполнения поля" ,
-              data-message-success="Поле заполнено верно" , data-required>
+            <div class="custom-input" data-validate-type="phone" data-on-input-validate
+              data-message-base="Заполните поле" data-message-extra="Проверьте корректность заполнения поля"
+              data-message-success="Поле заполнено верно" data-required>
               <input type="tel" placeholder="Телефон" required>
             </div>
             <button class="feedback__btn btn btn--light" type="submit">Отправить</button>

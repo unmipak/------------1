@@ -1,6 +1,6 @@
 // Swiper 7.4.1
 import Swiper, {Navigation, Pagination} from './vendor/swiper';
-// import './vendor/focus-visible-polyfill';
+import './vendor/focus-visible-polyfill';
 
 Swiper.use([Navigation, Pagination]);
 

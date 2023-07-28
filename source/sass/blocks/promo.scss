@@ -14,10 +14,13 @@
   }
 }
 
-.promo__wrapper {
+.promo__list {
   display: grid;
   gap: 40px;
   grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .promo__banner {
@@ -162,7 +165,7 @@
     padding-bottom: 40px;
   }
 
-  .promo__wrapper {
+  .promo__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -210,7 +213,8 @@
   }
 
   .promo__banner--main img {
-    max-width: none;
+    min-width: 399px;
+    min-height: 462px;
   }
 
   .promo__banner--main .promo__link {
@@ -275,5 +279,10 @@
 
   .promo__banner--main p {
     padding-bottom: 20px;
+  }
+
+  .promo__banner--main img {
+    min-width: 290px;
+    min-height: 299px;
   }
 }

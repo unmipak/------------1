@@ -64,6 +64,15 @@
   display: grid;
   grid-template-columns: auto minmax(227px, 400px);
   column-gap: 30px;
+
+  b {
+    grid-template-columns: 1 / 2;
+  }
+}
+
+
+.advantages__wrapper {
+  grid-template-columns: 2 / 3;
 }
 
 .advantages__item--main {

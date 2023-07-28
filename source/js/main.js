@@ -39,6 +39,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
 let video = document.querySelector('.gym__video');
 let videoBtn = document.querySelector('.gym__video-btn');
+let mobilePoster = 'img/video-preview-mobile.jpg';
+let defaultPoster = 'img/video-preview.jpg';
+let breakpoint = window.matchMedia('(max-width:768px)');
+
+function breakpointChecker() {
+  if (breakpoint.matches) {
+    video.setAttribute('poster', mobilePoster);
+  } else {
+    video.setAttribute('poster', defaultPoster);
+  }
+}
 
 function videoBtnOnclick() {
   if (video.paused) {
@@ -56,4 +67,5 @@ function videoOnclick() {
 
 video.addEventListener('click', videoOnclick);
 videoBtn.addEventListener('click', videoBtnOnclick);
+window.addEventListener('resize', breakpointChecker);
 

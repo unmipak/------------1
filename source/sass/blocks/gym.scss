@@ -44,19 +44,13 @@
     grid-column: 1 / 2;
   }
 
-  picture {
-    display: block;
-  }
-
   img {
     display: block;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
   }
-}
-
-.gym__picture {
-  margin: 0 auto;
-  grid-column: 2 / 3;
-  grid-row: 1 / 4;
 }
 
 .gym__wrapper-video {
@@ -87,7 +81,7 @@
 
   &:hover,
   &:focus-visible,
-  &:active{
+  &:active {
     background-image: url("../img/sprite/icon-play-active.svg");
     outline: none;
   }
@@ -103,10 +97,10 @@
     bottom: 120px;
     left: 60%;
     transform: translateX(-50%);
+  }
 
-    video {
-      max-width: none;
-    }
+  .gym__video {
+    max-width: none;
   }
 }
 
@@ -139,6 +133,10 @@
     padding: 0;
   }
 
+  .gym img {
+    width: auto;
+  }
+
   .gym__wrapper-video {
     position: absolute;
     left: 50%;
@@ -147,7 +145,7 @@
   }
 
   .gym__video {
-    width: 226px;
+    width: 266px;
     height: 167px;
   }
 
@@ -184,6 +182,7 @@
   }
 
   .gym__wrapper-video {
+    display: block;
     position: relative;
     margin: 0 auto;
     top: 0;

@@ -12,7 +12,7 @@
     content: "";
     width: 470px;
     height: 494px;
-    background-image: url("/build/img/decoration.png");
+    background-image: url("../img/decoration.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
@@ -124,7 +124,8 @@
     padding: 0 0 12px 0;
   }
 
-  p {
+  span {
+    display: block;
     text-align: center;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 16px;
@@ -134,7 +135,7 @@
     padding: 0 0 62px 0;
   }
 
-  b {
+  p {
     position: relative;
     font-family: "Roboto Condensed Bold", "Arial", sans-serif;
     font-size: 60px;
@@ -150,7 +151,7 @@
 
   }
 
-  b:after {
+  p:after {
     position: absolute;
     top: 0;
     left: 0;
@@ -226,11 +227,11 @@
     padding-bottom: 8px;
   }
 
-  .membership__item p {
+  .membership__item span {
     padding-bottom: 66px;
   }
 
-  .membership__item b {
+  .membership__item p {
     padding: 0 12px 40px;
   }
 
@@ -289,18 +290,18 @@
     padding-bottom: 7px;
   }
 
-  .membership__item p {
+  .membership__item span {
     font-size: 16px;
     padding-bottom: 54px;
   }
 
-  .membership__item b {
+  .membership__item p {
     column-gap: 7px;
     padding-bottom: 36px;
     font-size: 48px
   }
 
-  .membership__item b::after {
+  .membership__item p::after {
     font-size: 80px;
   }
 

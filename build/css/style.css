@@ -1985,7 +1985,7 @@ button,
   transform: translateX(-50%);
   border: 0;
   background: none;
-  background-image: url("/build/img/sprite/icon-play.svg");
+  background-image: url("../img/sprite/icon-play.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1997,12 +1997,12 @@ button,
 .gym__video-btn:hover,
 .gym__video-btn:focus-visible,
 .gym__video-btn:active {
-  background-image: url("/build/img/sprite/icon-play-active.svg");
+  background-image: url("../img/sprite/icon-play-active.svg");
   outline: none;
 }
 
 .gym__video-btn:disabled {
-  background-image: url("/build/img/sprite/icon-play-disabled.svg");
+  background-image: url("../img/sprite/icon-play-disabled.svg");
 }
 
 .membership {
@@ -3059,7 +3059,7 @@ button,
 
 .faq__question-btn {
   display: block;
-  background-image: url("../../img/sprite/icon-open-default.svg");
+  background-image: url("../img/sprite/icon-open-default.svg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -3071,16 +3071,16 @@ button,
 
 .faq__question-btn:hover,
 .faq__question-btn:focus-visible {
-  background-image: url("/build/img/sprite/icon-open-hover.svg");
+  background-image: url("../img/sprite/icon-open-hover.svg");
   outline: none;
 }
 
 .faq__question-btn:active {
-  background-image: url("/build/img/sprite/icon-play-active.svg");
+  background-image: url("../img/sprite/icon-play-active.svg");
 }
 
 .faq__question-btn:disabled {
-  background-image: url("/build/img/sprite/icon-play-disabled.svg");
+  background-image: url("../img/sprite/icon-play-disabled.svg");
 }
 
 .faq__elem {
@@ -3090,7 +3090,7 @@ button,
 }
 
 .faq__elem.is-active .faq__question span {
-  background-image: url("/build/img/sprite/icon-close.svg");
+  background-image: url("../img/sprite/icon-close.svg");
 }
 
 .faq__answer {

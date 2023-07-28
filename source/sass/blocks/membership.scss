@@ -154,7 +154,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    content: attr(data);
+    content: attr(data-price);
     font-size: 100px;
     color: $color-whisper;
     left: 50%;

@@ -77,7 +77,7 @@
   transform: translateX(-50%);
   border: 0;
   background: none;
-  background-image: url("../../img/sprite/icon-play.svg");
+  background-image: url("/build/img/sprite/icon-play.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -88,12 +88,12 @@
   &:hover,
   &:focus-visible,
   &:active{
-    background-image: url("../../img/sprite/icon-play-active.svg");
+    background-image: url("/build/img/sprite/icon-play-active.svg");
     outline: none;
   }
 
   &:disabled {
-    background-image: url("../../img/sprite/icon-play-disabled.svg");
+    background-image: url("/build/img/sprite/icon-play-disabled.svg");
   }
 }
 

@@ -82,6 +82,7 @@
     letter-spacing: 3px;
     -webkit-text-stroke: 3px;
     line-height: 114%;
+    text-transform: none;
   }
 
   .hero span {
@@ -92,7 +93,7 @@
 
   .hero__wrapper-title {
     min-width: 0;
-    column-gap: 5px;
+    column-gap: 22px;
   }
 
   .hero__list {
@@ -121,13 +122,13 @@
   .hero h1 {
     -webkit-text-stroke: 2px;
     margin: 0;
-    padding: 18px 0 22px;
+    padding: 17px 0 22px;
     width: 100%;
     line-height: normal;
-    text-transform: lowercase;
   }
 
   .hero__wrapper-title {
+    column-gap: 0;
     position: relative;
     min-width: 0;
     width: 100%;
@@ -135,7 +136,8 @@
 
   .hero__list {
     position: absolute;
-    top: 60%;
+    top: 45%;
+    left: 0;
     width: auto;
   }
 

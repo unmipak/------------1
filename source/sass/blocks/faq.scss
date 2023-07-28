@@ -82,25 +82,31 @@
     padding: 0;
     display: block;
   }
+}
 
-  span {
-    display: block;
-    background-image: url("../../img/sprite/icon-open-default.svg");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-width: 42px;
-    min-height: 42px;
-    cursor: pointer;
+.faq__question-btn {
+  display: block;
+  background-image: url("../../img/sprite/icon-open-default.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 42px;
+  min-height: 42px;
+  border: none;
+  background: none;
+
+  &:hover,
+  &:focus-visible {
+    background-image: url("/build/img/sprite/icon-open-hover.svg");
+    outline: none;
   }
 
-  span:hover,
-  span:focus-visible {
-    background-image: url("../../img/sprite/icon-open-hover.svg");
+  &:active {
+    background-image: url("/build/img/sprite/icon-play-active.svg");
   }
 
-  span:active {
-    background-image: url("../../img/sprite/icon-close.svg");
+  &:disabled {
+    background-image: url("/build/img/sprite/icon-play-disabled.svg");
   }
 }
 
@@ -111,7 +117,7 @@
 }
 
 .faq__elem.is-active .faq__question span {
-  background-image: url("../../img/sprite/icon-close.svg");
+  background-image: url("/build/img/sprite/icon-close.svg");
 }
 
 .faq__answer {
@@ -238,7 +244,7 @@
     }
   }
 
-  .faq__question span {
+  .faq__question-btn {
     min-width: 32px;
     min-height: 32px;
   }

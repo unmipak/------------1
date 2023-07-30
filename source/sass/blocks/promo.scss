@@ -41,7 +41,6 @@
     font-family: "Roboto Condensed", "Arial", sans-serif;
     line-height: 140%;
     font-size: 16px;
-    padding-bottom: 35px;
   }
 
   b {
@@ -53,7 +52,7 @@
 }
 
 .promo__info {
-  padding: 26px;
+  padding: 26px 26px 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -65,11 +64,12 @@
   color: $color-resolution-blue;
   font-family: "Roboto Condensed Bold", "Arial", sans-serif;
   line-height: 100%;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   padding: 10px 0 2px;
-  margin: auto auto 0 0;
+  margin: auto auto 10px 0;
   border-bottom: 1px solid $color-resolution-blue;
+  letter-spacing: 0.6px;
 
   &:hover {
     opacity: 80%;
@@ -77,6 +77,7 @@
 
   &:focus-visible {
     padding: 10px;
+    margin-bottom: 2px;
     outline: 1px solid $color-resolution-blue;
     border-bottom: 1px solid transparent;
   }
@@ -109,7 +110,7 @@
   }
 
   .promo__info {
-    padding: 45px 45px 40px;
+    padding: 45px 45px 43px;
     width: 50%;
   }
 
@@ -134,7 +135,8 @@
 }
 
 .promo__banner--main .promo__link {
-  margin-top: auto;
+  font-size: 14px;
+  margin: auto auto 0 0;
   width: fit-content;
   display: block;
   color: $color-default-white;
@@ -250,12 +252,12 @@
   }
 
   .promo__link {
-    margin: 0 auto;
+    margin: 0 auto 10px;
     letter-spacing: 0.7px;
   }
 
   .promo__info {
-    padding: 36px 42px 38px;
+    padding: 36px 42px 28px;
   }
 
   .promo__banner b {
@@ -267,7 +269,7 @@
   }
 
   .promo__banner--main .promo__info {
-    padding: 42px 35px 42px 45px;
+    padding: 42px 35px 32px 45px;
   }
 
   .promo__banner--main b {
@@ -281,5 +283,13 @@
   .promo__banner--main img {
     min-width: 290px;
     min-height: 299px;
+  }
+
+  .promo__banner--main .promo__link {
+    margin: 0 auto 10px;
+  }
+
+  .promo__banner--main .promo__link:focus-visible {
+    margin-bottom: 5px;
   }
 }

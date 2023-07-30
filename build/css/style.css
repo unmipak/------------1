@@ -2284,6 +2284,9 @@ button,
 }
 
 .event__btn {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   text-align: center;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -2806,7 +2809,6 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   line-height: 140%;
   font-size: 16px;
-  padding-bottom: 35px;
 }
 
 .promo__banner b {
@@ -2817,7 +2819,7 @@ button,
 }
 
 .promo__info {
-  padding: 26px;
+  padding: 26px 26px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2839,11 +2841,12 @@ button,
   color: #1c3374;
   font-family: "Roboto Condensed Bold", "Arial", sans-serif;
   line-height: 100%;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   padding: 10px 0 2px;
-  margin: auto auto 0 0;
+  margin: auto auto 10px 0;
   border-bottom: 1px solid #1c3374;
+  letter-spacing: 0.6px;
 }
 
 .promo__link:hover {
@@ -2852,6 +2855,7 @@ button,
 
 .promo__link:focus-visible {
   padding: 10px;
+  margin-bottom: 2px;
   outline: 1px solid #1c3374;
   border-bottom: 1px solid transparent;
 }
@@ -2896,7 +2900,7 @@ button,
 }
 
 .promo__banner--main .promo__info {
-  padding: 45px 45px 40px;
+  padding: 45px 45px 43px;
   width: 50%;
 }
 
@@ -2922,7 +2926,8 @@ button,
 }
 
 .promo__banner--main .promo__link {
-  margin-top: auto;
+  font-size: 14px;
+  margin: auto auto 0 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -4504,12 +4509,12 @@ button,
   }
 
   .promo__link {
-    margin: 0 auto;
+    margin: 0 auto 10px;
     letter-spacing: 0.7px;
   }
 
   .promo__info {
-    padding: 36px 42px 38px;
+    padding: 36px 42px 28px;
   }
 
   .promo__banner b {
@@ -4521,7 +4526,7 @@ button,
   }
 
   .promo__banner--main .promo__info {
-    padding: 42px 35px 42px 45px;
+    padding: 42px 35px 32px 45px;
   }
 
   .promo__banner--main b {
@@ -4535,6 +4540,14 @@ button,
   .promo__banner--main img {
     min-width: 290px;
     min-height: 299px;
+  }
+
+  .promo__banner--main .promo__link {
+    margin: 0 auto 10px;
+  }
+
+  .promo__banner--main .promo__link:focus-visible {
+    margin-bottom: 5px;
   }
 
   .faq {

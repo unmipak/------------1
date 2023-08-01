@@ -82,9 +82,10 @@
   padding: 60px 36px 60px 32px;
   background: $color-resolution-blue;
   grid-column: 2 / 3;
-  grid-row: 1 / span 2;
+  grid-row: span 2;
   height: fit-content;
   align-self: center;
+  order: -1;
 
   h3 {
     color: $color-default-white;
@@ -123,6 +124,10 @@
   }
 }
 
+.advantages__item:first-of-type {
+  order: -1;
+}
+
 @include vp-1365 {
   .advantages {
     padding: 105px 100px 122px;
@@ -158,6 +163,7 @@
 
   .advantages__item {
     column-gap: 30px;
+    order: 0;
   }
 
   .advantages__item--main {

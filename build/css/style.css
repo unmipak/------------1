@@ -1611,13 +1611,13 @@ button,
 .btn--dark:focus,
 .btn--dark:focus-visible {
   outline: none;
-  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  background: linear-gradient(129deg, #ed0233 0%, #003eb7 100%);
   color: #ffffff;
 }
 
 .btn--dark:active {
   outline: none;
-  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  background: linear-gradient(129deg, #ed0233 0%, #003eb7 100%);
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1718,7 +1718,7 @@ button,
 .header {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background: conic-gradient(from 145deg at 16% 39%, #003d85 32deg, #b80027 313deg, #003d85 360deg);
+  background: conic-gradient(from 151deg at 16% 39%, #003d85 32deg, #b80027 296deg, #003d85 360deg);
   padding: 38px 103px 92px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2237,7 +2237,7 @@ button,
 
 .membership__item:hover .membership__btn,
 .membership__item:focus-visible .membership__btn {
-  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  background: linear-gradient(129deg, #ed0233 0%, #003eb7 100%);
   color: #ffffff;
   outline: none;
 }
@@ -2672,7 +2672,7 @@ button,
   font-family: "Roboto Condensed Bold", "Arial", sans-serif;
   font-size: 71px;
   line-height: 100%;
-  background-image: linear-gradient(143deg, #d10a42 0%, #0041ca 100%);
+  background-image: linear-gradient(143deg, #d10a42 0%, #0041ca 60%);
   background-color: #102654;
   -webkit-background-clip: text;
   background-clip: text;
@@ -2735,14 +2735,16 @@ button,
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  grid-row: 1/span 2;
+  grid-row: span 2;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   -ms-grid-row-align: center;
   align-self: center;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
 .advantages__item--main h3 {
@@ -2779,6 +2781,12 @@ button,
 
 .advantages__item--main::after {
   right: 300px;
+}
+
+.advantages__item:first-of-type {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
 .promo {
@@ -3053,7 +3061,7 @@ button,
 
 .faq__btn.is-active {
   color: #ffffff;
-  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  background: linear-gradient(129deg, #ed0233 0%, #003eb7 100%);
   border: 1px solid transparent;
 }
 
@@ -3066,7 +3074,7 @@ button,
 
 .faq__btn:active {
   color: #ffffff;
-  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  background: linear-gradient(129deg, #ed0233 0%, #003eb7 100%);
   border: 1px solid transparent;
 }
 
@@ -3923,6 +3931,9 @@ button,
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
   }
 
   .advantages__item--main {
@@ -4697,6 +4708,15 @@ button,
     grid-template-columns: 1fr 1fr;
     text-align: center;
     gap: 7px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .faq__question-container {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .faq__btn {
@@ -4717,7 +4737,7 @@ button,
 
   .faq__btn.is-active {
     color: #ffffff;
-    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    background: linear-gradient(129deg, #ed0233 0%, #003eb7 100%);
     border: none;
   }
 

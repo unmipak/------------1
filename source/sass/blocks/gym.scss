@@ -2,6 +2,7 @@
   width: 100%;
   padding: 120px 103px 235px 163px;
   text-align: start;
+  justify-content: center;
   display: grid;
   grid-template-columns: 355px 660px;
   column-gap: 85px;
@@ -50,6 +51,7 @@
     margin: 0 auto;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
+    background-color: $color-light-slate-grey;
   }
 }
 
@@ -78,6 +80,7 @@
   width: 100px;
   height: 100px;
   z-index: 2;
+  cursor: pointer;
 
   &:hover,
   &:focus-visible,
@@ -91,12 +94,9 @@
   }
 }
 
-@include vp-1339 {
-  .gym__wrapper-video {
-    position: absolute;
-    bottom: 120px;
-    left: 60%;
-    transform: translateX(-50%);
+@include vp-1365 {
+  .gym {
+    padding: 120px 50px 235px 50px;
   }
 
   .gym__video {
@@ -176,21 +176,30 @@
     padding: 0 47px 34px 15px;
   }
 
+  .gym picture {
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
   .gym img {
-    padding-bottom: 40px;
+    object-fit: cover;
+    width: 100%;
   }
 
   .gym__wrapper-video {
     display: block;
     position: relative;
-    margin: 0 auto;
     top: 0;
     left: 0;
     transform: none;
   }
 
   .gym__video {
-    width: 320px;
-    height: 167px;
+    width: 100%;
+    height: auto;
+  }
+
+  .gym__video-btn {
+    bottom: 29%;
   }
 }

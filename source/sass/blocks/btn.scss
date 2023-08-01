@@ -10,6 +10,7 @@
   background-color: transparent;
   cursor: pointer;
   transition: opacity $trans-default;
+  user-select: none;
 
   &--light {
     color: $color-default-white;

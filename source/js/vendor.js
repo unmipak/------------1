@@ -17,12 +17,12 @@ const sliderTrainers = new Swiper('.trainers__slider', {
       spaceBetween: 0,
       slidesPerGroup: 1,
     },
-    768: {
+    767: {
       slidesPerView: 2,
       spaceBetween: 30,
       slidesPerGroup: 2,
     },
-    1200: {
+    1199: {
       slidesPerView: 4,
       spaceBetween: 40,
       slidesPerGroup: 4,

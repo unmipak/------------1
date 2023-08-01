@@ -55,6 +55,14 @@
   }
 }
 
+.contacts__item a {
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    opacity: 80%;
+  }
+}
+
 @include vp-1199 {
   .contacts {
     width: 100%;

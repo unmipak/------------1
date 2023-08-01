@@ -20,6 +20,11 @@
       color: $color-default-white;
     }
 
+    &:focus::-webkit-input-placeholder,
+    &:focus::-moz-placeholder {
+      color: transparent;
+    }
+
     &:hover {
       border-bottom: 1px solid $color-default-white;
     }
@@ -64,8 +69,8 @@
 
 @include vp-1199 {
   .custom-input {
-    width: 45%;
-    max-width: 206px;
+    width: 43.5%;
+    max-width: none;
   }
 }
 

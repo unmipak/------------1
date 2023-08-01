@@ -27,6 +27,7 @@
 }
 
 .footer__list {
+  max-width: 600px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -34,7 +35,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  column-gap: 40px;
+  row-gap: 20px;
 }
 
 .footer__link {
@@ -45,7 +47,7 @@
   height: 100%;
 
   &:hover {
-    opacity: 80%;
+    border-bottom: 1px solid $color-default-white;
   }
 
   &:focus,
@@ -66,8 +68,9 @@
   }
 
   .footer__list {
+    max-width: 420px;
     padding-left: 12px;
-    gap: 30px;
+    column-gap: 30px;
   }
 
   .footer__logo svg {
@@ -96,7 +99,6 @@
     padding: 0 0 35px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     column-gap: 30px;
     row-gap: 15px;
 
@@ -109,5 +111,25 @@
 
   .footer__link {
     font-size: 16px;
+  }
+
+  .footer__item--services {
+    order: 1;
+  }
+
+  .footer__item--membership {
+    order: 3;
+  }
+
+  .footer__item--promo {
+    order: 0;
+  }
+
+  .footer__item--trainers {
+    order: 2;
+  }
+
+  .footer__item--schedule {
+    order: 4;
   }
 }

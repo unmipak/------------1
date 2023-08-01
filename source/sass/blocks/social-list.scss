@@ -1,4 +1,5 @@
 .social-list {
+  max-width: 97px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -42,5 +43,11 @@
   &:focus > svg,
   &:active > svg {
     fill: $color-default-white;
+  }
+}
+
+@include vp-767 {
+  .social-list {
+    max-width: 100%;
   }
 }

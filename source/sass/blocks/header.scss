@@ -1,10 +1,13 @@
 .header {
   box-sizing: border-box;
   background: $background-gradient;
-  padding: 37px 103px 36px;
+  padding: 38px 103px 92px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__wrapper {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -13,7 +16,9 @@
 }
 
 .header__logo {
+  display: block;
   fill: $color-default-white;
+  max-width: 119px;
 
   &:hover {
     opacity: 80%;
@@ -27,13 +32,18 @@
   &:active {
     opacity: 30%;
   }
+
+  svg {
+    display: block;
+  }
 }
 
 .header__tel {
+  display: block;
   font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
   color: $color-default-white;
   font-size: 26px;
-  max-width: 50%;
+  max-width: 155px;
   letter-spacing: 0.78px;
 
   &:hover {
@@ -52,12 +62,14 @@
 
 @include vp-1199 {
   .header {
-    padding: 40px 45px 82px;
+    padding: 39px 45px 83px;
+    align-items: center;
   }
 
   .header__wrapper {
     padding-bottom: 18px;
     align-items: center;
+    max-width: 678px;
   }
 
   .header__logo svg {
@@ -79,6 +91,8 @@
 
   .header__wrapper {
     padding: 15px;
+    column-gap: 104px;
+    justify-content: center;
   }
 
   .header__logo svg {

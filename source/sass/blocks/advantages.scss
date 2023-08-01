@@ -216,7 +216,10 @@
   }
 
   .advantages b {
+    margin: 0 auto;
+    width: fit-content;
     font-size: 58px;
+    background-image: $text-gradient-mobile;
   }
 
   .advantages__item h3 {

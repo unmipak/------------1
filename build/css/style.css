@@ -4566,7 +4566,12 @@ button,
   }
 
   .advantages b {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     font-size: 58px;
+    background-image: linear-gradient(151deg, #d10a42 0%, #0041ca 60%);
   }
 
   .advantages__item h3 {

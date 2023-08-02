@@ -3980,7 +3980,9 @@ button,
   .promo__banner {
     min-width: auto;
     width: 47.7%;
-    height: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .promo__info {

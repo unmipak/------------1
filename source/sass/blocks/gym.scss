@@ -83,10 +83,13 @@
   cursor: pointer;
 
   &:hover,
-  &:focus-visible,
+  &:focus-visible {
+    background-image: url("../img/stack.svg#icon-play-hover");
+    outline: none;
+  }
+
   &:active {
     background-image: url("../img/stack.svg#icon-play-active");
-    outline: none;
   }
 
   &:disabled {

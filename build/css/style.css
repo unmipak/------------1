@@ -2023,10 +2023,13 @@ button,
 }
 
 .gym__video-btn:hover,
-.gym__video-btn:focus-visible,
+.gym__video-btn:focus-visible {
+  background-image: url("../img/stack.svg#icon-play-hover");
+  outline: none;
+}
+
 .gym__video-btn:active {
   background-image: url("../img/stack.svg#icon-play-active");
-  outline: none;
 }
 
 .gym__video-btn:disabled {
@@ -2723,10 +2726,10 @@ button,
 
 .advantages__list {
   list-style-type: none;
-  max-width: 1006px;
+  max-width: 1044px;
   margin: 0 auto;
-  padding-left: 20px;
   padding: 0;
+  padding-left: 20px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 31% 240px 32%;
@@ -2859,6 +2862,10 @@ button,
   gap: 41px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: -webkit-min-content 1fr;
+  -ms-grid-rows: min-content 1fr;
+  grid-template-rows: -webkit-min-content 1fr;
+  grid-template-rows: min-content 1fr;
   padding: 0;
   list-style-type: none;
 }

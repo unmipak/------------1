@@ -1,6 +1,6 @@
 .contacts {
   width: 50%;
-  padding: 48px 100px 64px 120px;
+  padding: 48px 100px 63px 123px;
   border-top: 1px solid #74819c;
 
   h2 {
@@ -9,18 +9,20 @@
     letter-spacing: 1.62px;
     line-height: 156%;
     text-align: start;
-    padding-bottom: 26px;
+    padding-bottom: 28px;
+    max-width: 463px;
   }
 }
 
 
 .contacts__list {
-  position: relative;
   margin: 0;
+  position: relative;
+  max-width: 463px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 120px;
-  row-gap: 20px;
+  row-gap: 18px;
 
   &::after {
     position: absolute;
@@ -78,6 +80,7 @@
   .contacts__list {
     column-gap: 96px;
     row-gap: 20px;
+    max-width: none;
   }
 
   .contacts__item dt {

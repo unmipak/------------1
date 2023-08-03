@@ -1,7 +1,6 @@
 .custom-input {
   position: relative;
-  width: 45%;
-  max-width: 190px;
+  min-width: 190px;
   flex-shrink: 1;
 
   input,
@@ -16,13 +15,15 @@
     border-bottom: 1px solid $color-light-slate-grey;
     padding: 10px 0;
 
-    &::-webkit-input-placeholder {
+    &::-webkit-input-placeholder,
+    &::placeholder {
       color: $color-default-white;
     }
 
     &:focus::-webkit-input-placeholder,
-    &:focus::-moz-placeholder {
-      color: transparent;
+    &:focus::-moz-placeholder,
+    &:focus::placeholder {
+      visibility: hidden;
     }
 
     &:hover {

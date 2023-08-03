@@ -1,18 +1,21 @@
 .header {
   box-sizing: border-box;
   background: $background-gradient;
-  padding: 38px 103px 92px;
+  padding: 38px 103px 91px;
   display: flex;
   flex-direction: column;
 }
 
 .header__wrapper {
+  margin: 0 auto;
+  max-width: 1160px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 10px;
+  z-index: 1;
 }
 
 .header__logo {

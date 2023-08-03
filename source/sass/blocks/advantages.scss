@@ -1,13 +1,16 @@
 .advantages {
   background: $color-ghost-white;
-  padding: 107px 180px 122px;
+  padding: 107px 161px 122px;
   width: 100%;
 
   h2 {
     @include block-title;
-    padding: 0 0 48px 0;
+    padding: 0 0 46px 0;
     letter-spacing: 1.62px;
     text-align: center;
+    display: block;
+    max-width: 1006px;
+    margin: 0 auto;
   }
 
   h3 {
@@ -16,7 +19,8 @@
     color: $color-sapphire;
     font-size: 22px;
     line-height: 150%;
-    padding-bottom: 10px;
+    padding-top: 2px;
+    padding-bottom: 6px;
   }
 
   p {
@@ -50,14 +54,14 @@
 
 .advantages__list {
   list-style-type: none;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: 20px;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 240px 1fr;
+  grid-template-columns: 31% 240px 32%;
   grid-auto-flow: row dense;
-  column-gap: 55px;
-  row-gap: 148px;
-  width: fit-content;
+  column-gap: 63px;
+  row-gap: 149px;
 }
 
 .advantages__item {
@@ -80,17 +84,18 @@
   position: relative;
   display: block;
   text-align: center;
-  padding: 60px 34px;
+  padding: 56px 30px 58px;
   background: $color-resolution-blue;
   grid-column: 2 / 3;
   grid-row: span 2;
   height: fit-content;
   align-self: center;
   order: -1;
+  margin: auto;
 
   h3 {
     color: $color-default-white;
-    padding-bottom: 38px;
+    padding-bottom: 36px;
     font-size: 26px;
   }
 
@@ -104,6 +109,8 @@
     background-image: $color-default-white;
     background-color: $color-default-white;
     -webkit-text-fill-color: $color-default-white;
+    padding-right: 3px;
+    padding-bottom: 1px;
   }
 
   &::before,
@@ -133,7 +140,7 @@
 
 @include vp-1199 {
   .advantages {
-    padding: 91px 52px 91px 45px;
+    padding: 91px 35px 91px;
   }
 
   .advantages h2 {
@@ -148,10 +155,13 @@
 
   .advantages h3 {
     font-size: 20px;
+    padding-top: 0;
     padding-bottom: 3px;
   }
 
   .advantages__list {
+    margin: 0 auto;
+    padding-right: 10px;
     grid-template-columns: 300px 1fr;
     column-gap: 55px;
     row-gap: 43px;
@@ -173,6 +183,7 @@
 
   .advantages__item--main b {
     font-size: 74px;
+    padding: 0;
   }
 
   .advantages__item--main h3 {
@@ -201,6 +212,7 @@
   .advantages__list {
     display: block;
     text-align: center;
+    padding: 0;
   }
 
   .advantages__item {

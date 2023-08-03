@@ -5,8 +5,11 @@
   h2 {
     @include block-title;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 38px;
     letter-spacing: 1.62px;
+    display: block;
+    max-width: 1366px;
+    margin: 0 auto;
   }
 }
 
@@ -62,10 +65,10 @@
   display: grid;
   grid-template-columns: 80px 1fr;
   column-gap: 28px;
-  row-gap: 18px;
-  padding: 54px 62px;
+  row-gap: 16px;
+  padding: 60px 62px 56px;
   background: $color-resolution-blue;
-  height: fit-content;
+  margin: auto;
 
   img {
     grid-column: 1 / 2;
@@ -82,7 +85,7 @@
     color: $color-default-white;
     font-family: "Roboto Condensed Bold", "Arial", sans-serif;
     font-size: 20px;
-    line-height: 130%;
+    line-height: 100%;
     margin: 0;
   }
 
@@ -115,12 +118,12 @@
   }
 
   .reviews__slide {
-    padding: 56px 65px 56px;
-    row-gap: 14px;
+    padding: 60px 65px 57px;
+    row-gap: 16px;
   }
 
   .reviews__slide img {
-    margin-top: 6px;
+    margin-top: 2px;
   }
 
   .reviews__btn-next {

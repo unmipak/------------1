@@ -1,13 +1,14 @@
 .trainers {
   width: 100%;
-  padding: 0 46px 104px;
+  padding: 0 46px 105px;
 
   h2 {
     @include block-title;
-    padding-bottom: 46px;
-    padding-left: 58px;
+    padding-bottom: 50px;
     text-align: start;
     letter-spacing: 1.62px;
+    max-width: 1160px;
+    margin: 0 auto;
   }
 }
 
@@ -45,6 +46,7 @@
 .trainers__info {
   box-sizing: border-box;
   overflow-y: scroll;
+  -moz-overflow-y: scroll;
 
   h3 {
     position: absolute;
@@ -85,6 +87,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
   }
 
   .trainers__list {
@@ -92,14 +95,12 @@
     flex-wrap: wrap;
     flex-direction: column;
     row-gap: 14px;
-    z-index: 2;
     margin-top: auto;
     justify-self: flex-end;
   }
 
   p {
     display: block;
-    z-index: 2;
   }
 
   h3 {

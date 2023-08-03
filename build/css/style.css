@@ -2723,8 +2723,9 @@ button,
 
 .advantages__list {
   list-style-type: none;
-  margin: 0;
-  margin-left: 20px;
+  max-width: 1006px;
+  margin: 0 auto;
+  padding-left: 20px;
   padding: 0;
   display: -ms-grid;
   display: grid;
@@ -3977,6 +3978,7 @@ button,
 
   .advantages__list {
     margin: 0 auto;
+    padding: 0;
     padding-right: 10px;
     -ms-grid-columns: 300px 1fr;
     grid-template-columns: 300px 1fr;

@@ -54,8 +54,9 @@
 
 .advantages__list {
   list-style-type: none;
-  margin: 0;
-  margin-left: 20px;
+  max-width: 1006px;
+  margin: 0 auto;
+  padding-left: 20px;
   padding: 0;
   display: grid;
   grid-template-columns: 31% 240px 32%;
@@ -161,6 +162,7 @@
 
   .advantages__list {
     margin: 0 auto;
+    padding: 0;
     padding-right: 10px;
     grid-template-columns: 300px 1fr;
     column-gap: 55px;

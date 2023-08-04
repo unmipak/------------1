@@ -114,10 +114,10 @@
   .event__banner {
     width: fit-content;
     display: flex;
+  }
 
-    picture {
-      max-width: 386px;
-    }
+  .event__banner picture {
+    max-width: 386px;
   }
 
   .event__info {
@@ -175,6 +175,7 @@
   }
 
   .event__banner {
+    max-width: min-content;
     flex-direction: column;
   }
 
@@ -183,6 +184,10 @@
     width: 100%;
     padding: 50px 44px 51px;
     column-gap: 30px;
+  }
+
+  .event__banner picture {
+    max-width: none;
   }
 
   .event h3 {

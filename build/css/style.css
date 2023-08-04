@@ -4519,6 +4519,9 @@ button,
   }
 
   .event__banner {
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -4531,6 +4534,10 @@ button,
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
+  }
+
+  .event__banner picture {
+    max-width: none;
   }
 
   .event h3 {

@@ -171,7 +171,7 @@
 
 @include vp-767 {
   .event {
-    padding: 70px 15px 0 15px;
+    padding: 68px 15px 0 15px;
   }
 
   .event__banner {
@@ -184,11 +184,15 @@
     width: 100%;
     padding: 50px 44px 51px;
     column-gap: 30px;
+    min-height: 292px;
   }
 
   .event__banner picture {
     max-width: none;
+    min-width: 290px;
+    min-height: 292px;
   }
+
 
   .event h3 {
     margin: 0;

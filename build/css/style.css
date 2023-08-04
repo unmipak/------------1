@@ -4442,7 +4442,7 @@ button,
   }
 
   .membership {
-    padding: 63px 15px 70px;
+    padding: 63px 15px 68px;
   }
 
   .membership::after {
@@ -4515,7 +4515,7 @@ button,
   }
 
   .event {
-    padding: 70px 15px 0 15px;
+    padding: 68px 15px 0 15px;
   }
 
   .event__banner {
@@ -4534,10 +4534,13 @@ button,
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
+    min-height: 292px;
   }
 
   .event__banner picture {
     max-width: none;
+    min-width: 290px;
+    min-height: 292px;
   }
 
   .event h3 {
@@ -4600,7 +4603,7 @@ button,
     text-align: center;
     letter-spacing: 1px;
     padding: 0;
-    padding-bottom: 44px;
+    padding-bottom: 42px;
   }
 
   .trainers__slider {
@@ -4734,6 +4737,10 @@ button,
     padding-bottom: 44px;
   }
 
+  .promo__list {
+    gap: 30px;
+  }
+
   .promo__banner {
     width: 100%;
     text-align: center;
@@ -4799,7 +4806,7 @@ button,
   }
 
   .faq {
-    padding: 70px 15px 70px;
+    padding: 70px 15px 67px;
     background: #f8f9fc;
   }
 
@@ -4810,7 +4817,7 @@ button,
   .faq h2 {
     font-size: 32px;
     letter-spacing: 1px;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
   }
 
   .faq__navigation {
@@ -4994,7 +5001,7 @@ button,
 
   .contacts {
     display: block;
-    padding: 58px 15px 61px;
+    padding: 58px 15px 60px;
   }
 
   .contacts h2 {
